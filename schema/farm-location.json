@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/farm-location.json",
+  "title": "The location of the farm",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "geoLocation",
+    "positionTakenAt"
+  ],
+  "properties": {
+    "geoLocation": {
+      "title": "Front door geolocation",
+      "$ref": "./point.json",
+      "additionalProperties": false
+    },
+    "positionTakenAt": {
+      "title": "The position was taken at ..",
+      "type": "string",
+      "enum": [
+        "Middle of the farm",
+        "At the gate or entry"
+      ]
+    },
+    "farmShape": {
+      "title": "Shape of the farm",
+      "$ref": "./polygon.json",
+      "additionalProperties": false
+    },
+    "altitude": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/wages.json",
+  "title": "Wages",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "wagesCoffee",
+    "wagesHarvesting",
+    "wagesProcessing"
+  ],
+  "properties": {
+    "wagesCoffee": {
+      "title": "The average daily wage rate paid for coffee production",
+      "type": "number",
+      "minimum": 0
+    },
+    "wagesHarvesting": {
+      "title": "The average daily wage rate paid for harvesting",
+      "type": "number",
+      "minimum": 0
+    },
+    "wagesProcessing": {
+      "title": "The average daily wage rate paid for processing",
+      "type": "number",
+      "minimum": 0
+    },
+    "wageDistribution": {
+      "title": "Wage distribution",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "wageFertilizer": {
+      "title": "TODO: wageFertilizer",
+      "type": "number"
+    },    
+    "wageLandprep": {
+      "title": "TODO: wageLandprep",
+      "type": "number"
+    },    
+    "wageMachine": {
+      "title": "TODO: wageMachine",
+      "type": "number"
+    },     
+    "wagePesticide": {
+      "title": "TODO: wagePesticide",
+      "type": "number"
+    },      
+    "wageSowing": {
+      "title": "TODO: wageSowing",
+      "type": "number"
+    },
+    "wageWeeding": {
+      "title": "TODO: wageWeeding",
+      "type": "number"
+    },   
+    "wageOther": {
+      "title": "TODO: wageOther",
+      "type": "number"
+    },     
+    "ruralMinimumWage": {
+      "title": "Rural minimum wage",
+      "type": "number",
+      "minimum": 0
+    },
+    "nationalMinimumWage": {
+      "title": "National minimum wage",
+      "type": "number",
+      "minimum": 0
+    },
+    "permMaleWorker": {
+      "title": "TODO: permMaleWorker",
+      "type": "integer",
+      "minimum": 0
+    },    
+    "permFemaleWorker": {
+      "title": "TODO: permFemaleWorker",
+      "type": "integer",
+      "minimum": 0
+    },
+    "tempMaleWorker": {
+      "title": "TODO: tempMaleWorker",
+      "type": "integer",
+      "minimum": 0
+    },
+    "tempFemaleWorker": {
+      "title": "TODO: tempFemaleWorker",
+      "type": "integer",
+      "minimum": 0
+    }, 
+    "familyWorker": {
+      "title": "TODO: familyWorker",
+      "type": "integer",
+      "minimum": 0
+    }           
+  }
+}

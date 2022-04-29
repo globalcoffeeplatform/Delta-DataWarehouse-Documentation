@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/production-costs.json",
+  "title": "Cost of Production",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fertilizers",
+    "pesticides",
+    "plantingMaterial",
+    "renovation"
+  ],
+  "properties": {
+    "fertilizers": {
+      "title": "Fertilizers costs",
+      "$ref": "./costs-definition.json"
+    },
+    "pesticides": {
+      "title": "Pesticides costs",
+      "$ref": "./costs-definition.json"
+    },
+    "hiredLabour": {
+      "title": "Costs of hired labour",
+      "$ref": "./costs-definition.json"
+    },
+    "plantingMaterial": {
+      "title": "Costs of planting material",
+      "$ref": "./costs-definition.json"
+    },
+    "renovation": {
+      "title": "Costs of renovation",
+      "$ref": "./costs-definition.json"
+    },
+    "deductionsByBuyers": {
+      "title": "Deductions by buyers",
+      "$ref": "./costs-definition.json"
+    },
+    "rentOfLand": {
+      "title": "Rent of land",
+      "$ref": "./costs-definition.json"
+    },
+    "energy": {
+      "title": "Energy costs",
+      "$ref": "./costs-definition.json"
+    },
+    "irrigation": {
+      "title": "Irrigation costs",
+      "$ref": "./costs-definition.json"
+    },
+    "capitalAssets": {
+      "title": "Capital assets",
+      "$ref": "./costs-definition.json"
+    },
+    "cultivationPractices": {
+      "title": "Cultivation practices",
+      "$ref": "./costs-definition.json"
+    },
+    "traceabilityAndRecordKeeping": {
+      "title": "Traceability and record keeping",
+      "$ref": "./costs-definition.json"
+    },
+    "plantingReforestation": {
+      "title": "Planting and reforestation costs",
+      "$ref": "./costs-definition.json"
+    },
+    "training": {
+      "title": "Training costs",
+      "$ref": "./costs-definition.json"
+    },
+    "interest": {
+      "title": "Interest on credit",
+      "$ref": "./costs-definition.json"
+    },
+    "cropInsurance": {
+      "title": "Crop insurance",
+      "$ref": "./costs-definition.json"
+    },
+    "cooperativeFees": {
+      "title": "Cooperative fees",
+      "$ref": "./costs-definition.json"
+    },
+    "unpaidFamilyLabour": {
+      "title": "Unpaid family labour",
+      "$ref": "./costs-definition.json"
+    },
+    "transportation": {
+      "title": "TODO transportation title",
+      "$ref": "./costs-definition.json"
+    },
+    "other": {
+      "title": "Other costs",
+      "$ref": "./costs-definition.json"
+    }
+  }
+}

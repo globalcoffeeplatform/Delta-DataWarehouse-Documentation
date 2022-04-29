@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/forest-ecosystem-protection.json",
+    "title": "Forest and Ecosystem Protection",
+    "type": "array",
+    "additionalProperties": false,
+    "required": [
+        "productName",
+        "usesPerHectare",
+        "activeIngredient",
+        "useBasedOnProfessionalAssessment"
+    ],
+    "properties": {
+        "productName": {
+            "type": "string"
+        },
+        "usesPerHectare": {
+            "type": "number",
+            "minimum": 0
+        },
+        "activeIngredient": {
+            "title": "Fertilizer Use Active Ingredient",
+            "description": "TODO",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "N",
+                "P",
+                "K"
+            ],
+            "properties": {
+                "N": {
+                    "title": "Nitrogen",
+                    "type": "number",
+                    "minimum": 0
+                },
+                "P": {
+                    "title": "Phosphorus",
+                    "type": "number",
+                    "minimum": 0
+                },
+                "K": {
+                    "title": "Kalium (potassium)",
+                    "type": "number",
+                    "minimum": 0
+                }
+            }
+        },
+        "useBasedOnProfessionalAssessment": {
+            "title": "Use Based On Professional Assessment",
+            "description": "TODO",
+            "type": "string",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        }
+    }
+}

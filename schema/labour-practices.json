@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/labour-practices.json",
+  "title": "Labour Practices",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "clearContracting",
+    "rightToOrganise",
+    "prohibitingDiscrimination",
+    "hazardousWorkingCondition"
+  ],
+  "properties": {
+    "clearContracting": {
+      "title": "Clear contracting",
+      "description": "Clear contracting with workers to avoid any form of forced labour (including slave labour or child labour), which includes: the terms of the work, hours, duration, wages, payment details, deductions or fees, etc.",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "rightToOrganise": {
+      "title": "Right to organise",
+      "description": "Right to organise--the ability for workers to join unions or committees and freely assemble.",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "prohibitingDiscrimination": {
+      "title": "Prohibiting discrimination",
+      "description": "Prohibiting discrimination--in terms of pay rates, hiring practices, housing for any group of workers (i.e., on the basis of immigration status, gender, ethnic or religious background, sexual orientation)",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "hazardousWorkingCondition": {
+      "title": "Hazardous working condition",
+      "description": "Hazardous working condition management--agrochemical protective gear; training on proper chemical handling, storage, and disposal; proper training and safeguarding for hazardous machinery, workplace sanitation, emergency preparedness, etc. ",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    }
+  }
+}

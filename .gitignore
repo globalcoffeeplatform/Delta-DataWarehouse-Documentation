@@ -1,0 +1,8 @@
+.idea/
+docs/build/
+generator/.vs/
+generator/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+generator/bin/
+generator/obj/
+generator/packages/
+docs/node_modules/

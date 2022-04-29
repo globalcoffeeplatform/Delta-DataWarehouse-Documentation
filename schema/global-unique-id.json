@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/global-unique-id.json",
+  "title": "The global unique ID",
+  "description": "With this structure every object is unique and when it is shared with other organizations it can be identified as coming from a specific organization.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "organisation",
+    "identifier",
+    "timestamp"
+  ],
+  "properties": {
+    "organisation": {
+      "title": "The name of the organisation",
+      "description": "This can be a name or number uniquely identifying the organisation that issues this number. For example 'RAINFOREST-ALLIANCE' when they issued the identifier or 'BURUNDI' when it is a national ID.",
+      "type": "string",
+      "examples": ["RAINFOREST-ALLIANCE", "BURUNDI"]
+    },
+    "identifier": {
+      "title": "The identifier issued by the organisation.",
+      "description": "The identifier issued by the organisation. Can be the Chamber of Commerce number or other number or string known by the organisation.",
+      "type": "string"
+    },
+    "timestamp": {
+      "title": "The creation timestamp. [YYYY-MM-DD]",
+      "description": "The timestamp when this identifier was created.",
+      "examples": [
+        "2016-06-31",
+        "2019-01-03"
+      ],
+      "type": "string",
+      "pattern": "^[12][0-9]{3}-[01][0-9]-[0-3][0-9]$",
+      "format": "full-date"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/labour-costs-distribution.json",
+  "title": "Labour costs distribution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "replanting-rejuvenation",
+    "grassControlling",
+    "branchBudsControlling",
+    "irrigationWatering",
+    "pesticideApplication",
+    "fertilizerApplication",
+    "harvesting",
+    "processing"
+  ],
+  "properties": {
+    "replanting-rejuvenation": {
+      "title": "TODO replanting-rejuvenation",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "grassControlling": {
+      "title": "TODO: grassControlling",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "branchBudsControlling": {
+      "title": "TODO: branchBudsControlling",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "irrigationWatering": {
+      "title": "TODO: irrigationWatering",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "pesticideApplication": {
+      "title": "TODO: pesticideApplication",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "fertilizerApplication": {
+      "title": "TODO: fertilizerApplication",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "harvesting": {
+      "title": "TODO: fertilizerApplication",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "processing": {
+      "title": "TODO: processing",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

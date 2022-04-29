@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/water.json",
+  "title": "Water Conservation & Contamination Prevention",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "waterConservation",
+    "waterContamination"
+  ],
+  "properties": {
+    "waterConservation": {
+      "title": "Water conservation practices",
+      "description": "% of applicable water conservation practices used on the farm (of those listed)",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dripIrrigation",
+        "waterCatchments",
+        "waterEfficientProcessing"
+      ],
+      "properties": {
+        "dripIrrigation": {
+          "title": "Drip irrigation",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterCatchments": {
+          "title": "Water catchments",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterEfficientProcessing": {
+          "title": "Water-efficient processing",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "createBasin": {
+          "title": "Create basin",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterUses": {
+          "title": "Water uses",
+          "type": "number",
+          "minimum": 0
+        },
+        "waterSource": {
+          "title": "Water Source",
+          "type": "string",
+          "enum": [
+            "Pond/Lake",
+            "River/Stream",
+            "Well",
+            "Others"
+          ]
+        },
+        "irrigationSystem": {
+          "title": "Irrigation System",
+          "type": "string",
+          "enum": [
+            "Basin",
+            "Drip irrigation",
+            "Partial sprinkler",
+            "Sprinkler",
+            "Others"
+          ]
+        }
+      }
+    },
+    "waterContamination": {
+      "title": "Water contamination prevention practices",
+      "description": "% of water contamination prevention practices used on the farm (of those listed).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "noPesticideCleaningNearWater",
+        "preventUntreatedWater",
+        "noLivestockNearWater",
+        "noDomesticDischarge"
+      ],
+      "properties": {
+        "noPesticideCleaningNearWater": {
+          "title": "No pesticide cleaning near water",
+          "description": "Pesticide equipment is cleaned away from natural water bodies",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "preventUntreatedWater": {
+          "title": "Prevent untreated water",
+          "description": "Ensuring untreated water from processing does not enter natural water bodies",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "noLivestockNearWater": {
+          "title": "No livestock near water",
+          "description": "Grazing livestock away from natural water bodies",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "noDomesticDischarge": {
+          "title": "No domestic discharge",
+          "description": "Domestic discharge prevented from entering natural water bodies",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    }
+  }
+}

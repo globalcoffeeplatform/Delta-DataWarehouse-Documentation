@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/soil-conservation.json",
+    "title": "Soil Analysis Report",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "pHKCl",
+        "organicMatter",
+        "N",
+        "P2O5",
+        "K2O5",
+        "Ca2+",
+        "Mg2+",
+        "Clay",
+        "Loam",
+        "Sand"
+    ],
+    "properties": {
+        "pHKCl": {
+            "title": "TODO pH-KCl",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 14
+        },
+        "organicMatter": {
+            "title": "Organic Matter",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "N": {
+            "title": "Nitrogen",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0
+        },
+        "P2O5": {
+            "title": "TODO Phosphate",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0
+        },
+        "K2O5": {
+            "title": "TODO K2O5",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0
+        },
+        "Ca2+": {
+            "title": "TODO Ca2+",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0
+        },
+        "Mg2+": {
+            "title": "TODO Mg2+",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0
+        },
+        "Clay": {
+            "title": "Clay percentage",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Loam": {
+            "title": "Loam percentage",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "Sand": {
+            "title": "Sand percentage",
+            "description": "TODO",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/child-labour.json",
+  "title": "Child labour",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schoolAgeHouseholdMembers",
+    "hazardousProhibition"
+  ],
+  "properties": {
+    "workingTask": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Applying chemical pesticides",
+          "Using hazardous machinery",
+          "Moving excessive weights/loads",
+          "Working long hours or at night"
+        ]
+      }
+    },
+    "workingHour": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24      
+    },
+    "schoolAgeHouseholdMembers": {
+      "title": "School-age household members",
+      "description": "% of school-age household members, under age 18, who have completed appropriate grade level for their age",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "hazardousProhibition": {
+      "title": "Prohibition of children in hazardous working conditions",
+      "description": "Are young workers (those under age 18) working in hazardous conditions (applying chemical pesticides, using hazardous machinery, moving excessive weights/loads, etc.)",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    }
+  }
+}
