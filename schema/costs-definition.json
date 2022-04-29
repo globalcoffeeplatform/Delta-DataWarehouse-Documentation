@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/costs-definitionjson",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/costs-definitionjson",
   "title": "Costs definition",
   "description": "The simple approach asks only about the main costs in the production system that typically account for the vast majority of total costs (and the total amount spent on each during the last production year).",
   "type": "object",
@@ -17,7 +17,7 @@
     },
     "percentage": {
       "title": "The portion used for coffee production",
-      "description": "Costs should be associated with the coffee production only (i.e., if labor is hired for multiple crops, only the portion used for coffee production should be included). One way to make sure that costs are correctly associated with the production of the coffee is to ask for the percent of inputs that were used for the coffee.",
+      "description": "Costs should be associated with the coffee production only (i.e., if labour is hired for multiple crops, only the portion used for coffee production should be included). One way to make sure that costs are correctly associated with the production of the coffee is to ask for the percent of inputs that were used for the coffee.",
       "type": "number",
       "minimum": 0,
       "maximum": 100

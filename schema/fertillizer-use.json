@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/forest-ecosystem-protection.json",
-    "title": "Forest and Ecosystem Protection",
+    "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/fertillizer-use.json",
+    "title": "Fertilizer use",
     "type": "array",
     "additionalProperties": false,
     "required": [

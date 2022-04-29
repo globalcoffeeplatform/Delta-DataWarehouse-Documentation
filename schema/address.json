@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/address.json",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/address.json",
   "title": "The address",
   "description": "An address. This is the legally registered address.",
   "type": "object",

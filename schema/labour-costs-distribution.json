@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/CoffeeDataStandard/master/schema/labour-costs-distribution.json",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/labour-costs-distribution.json",
   "title": "Labour costs distribution",
   "type": "object",
   "additionalProperties": false,
