@@ -1,0 +1,123 @@
+"environmental": {
+  "forestEcosystemProtection": {
+    "areaConvertedLand": {
+      "landConversion": "Yes",
+      "absoluteArea": 0.8,
+      "landConversionType": "Wetland",
+      "landConversionYear": 1998
+    },
+    "ecosystemProtection": 45.2
+  },
+  "fertilizerUse": [
+    {
+      "useBasedOnProfessionalAssessment": "Yes",
+      "productName": "NPK 16-16-16",
+      "activeIngredient": {
+        "N": 16,
+        "P": 16,
+        "K": 16
+      },
+      "usesPerHectare": 56
+    },
+    {
+      "useBasedOnProfessionalAssessment": "No",
+      "productName": "Animal Waste",
+      "activeIngredient": {
+        "N": 0,
+        "P": 0,
+        "K": 0
+      },
+      "usesPerHectare": 560
+    }
+  ],
+  "water": {
+    "waterConservation": {
+      "waterSource": "River/Stream",
+      "irrigationSystem": "Basin",
+      "waterUses": 253000.0,
+      "createBasin": "Yes",
+      "dripIrrigation": "No",
+      "waterCatchments": "Yes",
+      "waterEfficientProcessing": "No"
+    },
+    "waterContamination": {
+      "preventUntreatedWater": "Yes",
+      "noPesticideCleaningNearWater": "No",
+      "noLivestockNearWater": "Yes",
+      "noDomesticDischarge": "Yes"
+    }
+  },
+  "pestControl": {
+    "ipmPractices": {
+      "conductRegularVisualExaminations": "Yes",
+      "pestRepelSpecies": "No",
+      "useNaturalPesticides": "Yes",
+      "applyAfterIdentifying": "No",
+      "predatorPlaces": "Yes",
+      "recordPestInfestation": "No"
+    },
+    "pesticideUses": [
+      {
+        "pesticideName": "Mancozeb",
+        "activeIngredient": {
+          "ingredient1": "Active Ingredient 1",
+          "ingredient2": "Active Ingredient 2"
+        },
+        "usesPerHectare": 45.5,
+        "numberOfApplication": 2
+      },
+      {
+        "pesticideName": "Dimethoate",
+        "activeIngredient": {
+          "ingredient1": "Active Ingredient 1",
+          "ingredient2": "Active Ingredient 2"
+        },
+        "usesPerHectare": 15.1,
+        "numberOfApplication": 1
+      }
+    ],
+    "useOfBannedPesticides": "No",
+    "pestsInfection": [
+      {
+        "pestName": "Pink Disease",
+        "%AffectedCrops": 5.8
+      },
+      {
+        "pestName": "Leaf Rust",
+        "%AffectedCrops": 2.1
+      }
+    ]
+  },
+  "soilConservation": {
+    "soilType": "Bazal soil",
+    "soilMoist": "Moist",
+    "soilDrain": "Good",
+    "checkDams": "Yes",
+    "interplanting": "No",
+    "contourPlanting": "No",
+    "recyclingOrganicMatter": "Yes",
+    "cropResidueManagementPractices": "Yes",
+    "liveFences": "Yes"
+  },
+  "soilAnalysisReport": {
+    "pHKCl": 4.32,
+    "organicMatter": 3.42,
+    "N": 0.16,
+    "P2O5": 6.3,
+    "K2O5": 12.4,
+    "Ca2+": 2.8,
+    "Mg2+": 1.0,
+    "Clay": 59.4,
+    "Loam": 36.04,
+    "Sand": 4.56
+  },
+  "climateChange": {
+    "rainfall": 2.5
+  },
+  "energyUses": {
+    "electicityUses": 200.0,
+    "coalUses": 100.5,
+    "oil-petrol-dieselUses": 40.9,
+    "gasUses": 58.3
+  }
+}

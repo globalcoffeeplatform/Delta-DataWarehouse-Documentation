@@ -1,0 +1,16 @@
+"social": {
+  "povertyLevel": {
+    "householdMembers": 3,
+    "totalHouseholdIncome": 20.58
+  },
+  "childLabour": {
+    "workingTask": [
+      "Applying chemical pesticides",
+      "Using hazardous machinery"
+    ],
+    "workingHour": 3,
+    "schoolAgeHouseholdMembers": 33.3,
+    "hazardousProhibition": "No"
+  },
+  "daysFoodScarcity": 4
+}
