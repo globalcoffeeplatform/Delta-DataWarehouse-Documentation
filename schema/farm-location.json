@@ -5,13 +5,42 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "geoLocation",
+    "coordinates",
     "positionTakenAt"
   ],
   "properties": {
+    "coordinates": {
+      "title": "Front door geolocation, using custom schema",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "farmShape": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "minItems": 3,
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
     "geoLocation": {
-      "title": "Front door geolocation",
+      "title": "Front door geolocation, using GeoJson schema",
       "$ref": "./point.json",
+      "additionalProperties": false
+    },
+    "farmShape2": {
+      "title": "Shape of the farm, using GeoJson schema",
+      "$ref": "./polygon.json",
       "additionalProperties": false
     },
     "positionTakenAt": {
@@ -22,12 +51,10 @@
         "At the gate or entry"
       ]
     },
-    "farmShape": {
-      "title": "Shape of the farm",
-      "$ref": "./polygon.json",
-      "additionalProperties": false
-    },
     "altitude": {
+      "type": "number"
+    },
+    "precision": {
       "type": "number"
     }
   }

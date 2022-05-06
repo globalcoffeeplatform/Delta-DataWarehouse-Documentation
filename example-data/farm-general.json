@@ -1,4 +1,4 @@
-"general": {
+"general-farm": {
   "farmId": {
     "identifier": "2345",
     "organisation": "Land register of Burundi",
@@ -21,39 +21,26 @@
   "totalFarmSize": 16.25,
   "totalAreaCoffee": 14.48,
   "location": {
-    "geoLocation": {
-      "coordinates": [
-        125.25,
-        135.255
+    "coordinates": [
+      125.25,
+      125.25
+    ],
+    "farmShape": [
+      [
+        125.45,
+        145.45
       ],
-      "type": "Point"
-    },
-    "farmShape": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          125.45,
-          145.45
-        ],
-        [
-          125.23,
-          145.45
-        ],
-        [
-          125.23,
-          145.34
-        ],
-        [
-          125.78,
-          145.34
-        ],
-        [
-          125.45,
-          145.45
-        ]
+      [
+        125.23,
+        125.78
+      ],
+      [
+        125.46,
+        142.25
       ]
-    },
+    ],
     "positionTakenAt": "Middle of the farm",
-    "altitude": 256.45
+    "altitude": 256.45,
+    "precision": 10.4
   }
 }

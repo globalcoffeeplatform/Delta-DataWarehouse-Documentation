@@ -1,4 +1,4 @@
-"social": {
+"social-farmer": {
   "povertyLevel": {
     "householdMembers": 3,
     "totalHouseholdIncome": 20.58
@@ -11,6 +11,5 @@
     "workingHour": 3,
     "schoolAgeHouseholdMembers": 33.3,
     "hazardousProhibition": "No"
-  },
-  "daysFoodScarcity": 4
+  }
 }

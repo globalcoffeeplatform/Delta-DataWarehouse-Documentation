@@ -1,4 +1,4 @@
-"general": {
+"general-farmer": {
   "farmerId": {
     "organisation": "Chamber of Commerce, Burundi",
     "identifier": "1035413151",
@@ -18,6 +18,13 @@
   },
   "yearOfBirth": 1974,
   "gender": "M",
+  "farmIds": [
+    {
+      "identifier": "2345",
+      "organisation": "Land register of Burundi",
+      "timestamp": "1998-12-28"
+    }
+  ],
   "thirdPartyIds": [
     {
       "identifier": "N2786-Q5572-H8123-S9007",
@@ -28,13 +35,6 @@
       "identifier": "514356411",
       "organisation": "COSA",
       "timestamp": "2017-12-30"
-    }
-  ],
-  "farmIds": [
-    {
-      "identifier": "2345",
-      "organisation": "Land register of Burundi",
-      "timestamp": "1998-12-28"
     }
   ]
 }

@@ -1,381 +1,379 @@
 {
-    "$schema": "farmData.schema.json",
-    "metadata": {
-        "globalCoffeeDatasetId": {
+	"$schema": "../schema/farmData.schema.json",
+	"metadata": {
+		"globalCoffeeDatasetId": {
 			"identifier": "634748-hfgf-ydhgd",
 			"organisation": "COSA",
 			"timestamp": "2019-01-02"
 		},
 		"schemaVersion": "1.0.0",
 		"productionYear": {
-			"start": 201804,
-			"end": 201808
+			"start": "2018-04",
+			"end": "2018-08"
 		}
-    },
-    "farmer": {
-        "general": {
-            "farmerId": {
-                "organisation": "Chamber of Commerce, Burundi",
-                "identifier": "1035413151",
-                "timestamp": "2010-05-21"
-            },
-            "name": {
-                "firstName": "Carlos",
-                "lastName": "de la Huerta"
-            },
-            "address": {
-                "streetAddress": "1600 Amphitheatre Pkwy",
-                "adminAreaLevel4/village": "village1",
-                "adminAreaLevel3/district/city": "city1",
-                "adminAreaLevel2/state/province": "PR",
-                "zipCode": "858101",
-                "adminAreaLevel1/countryName": "Burundi"
-            },
-            "yearOfBirth": 1974,
-            "gender": "M",
-            "thirdPartyIds": [
-                {
-                    "identifier": "N2786-Q5572-H8123-S9007",
-                    "organisation": "UN Blue number",
-                    "timestamp": "2018-12-08"
-                },
-                {
-                    "identifier": "514356411",
-                    "organisation": "COSA",
-                    "timestamp": "2017-12-30"
-                }
-            ],
-            "farmIds": [
-                {
-                    "identifier": "2345",
-                    "organisation": "Land register of Burundi",
-                    "timestamp": "1998-12-28"
-                }
-            ]
-        },
-        "social": {
-            "povertyLevel": {
-                "householdMembers": 3,
-                "totalHouseholdIncome": 20.58
-            },
-            "childLabour": {
-                "workingTask": [
-                    "Applying chemical pesticides",
-                    "Using hazardous machinery"
-                ],
-                "workingHour": 3,
-                "schoolAgeHouseholdMembers": 33.3,
-                "hazardousProhibition": "No"
-            },
-            "daysFoodScarcity": 4
-        }
-    },
-    "farm": {
-        "general": {
-            "farmId": {
-                "identifier": "2345",
-                "organisation": "Land register of Burundi",
-                "timestamp": "1998-12-28"
-            },
-            "farmerId": {
-                "organisation": "Chamber of Commerce, Burundi",
-                "identifier": "1035413151",
-                "timestamp": "2010-05-21"
-            },
-            "address": {
-                "streetAddress": "1600 Amphitheatre Pkwy",
-                "adminAreaLevel4/village": "village1",
-                "adminAreaLevel3/district/city": "city1",
-                "adminAreaLevel2/state/province": "BR-01",
-                "zipCode": "45856",
-                "adminAreaLevel1/countryName": "Burundi"
-            },
-            "farmOwnership": "Rented",
-            "totalFarmSize": 16.25,
-            "totalAreaCoffee": 14.48,
-            "location": {
-                "geoLocation": {
-                    "coordinates": [
-                      125.25, 135.255
-                    ],
-                    "type": "Point"
-                  },
-                  "farmShape": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [ 125.45, 145.45 ],
-                      [ 125.23, 145.45 ],
-                      [ 125.23, 145.34 ],
-                      [ 125.78, 145.34 ],
-                      [ 125.45, 145.45 ]
-                    ]
-                  },
-                "positionTakenAt": "Middle of the farm",
-                "altitude": 256.45
-            }
-        },
-        "social": {
-            "labourPractices": {
-                "prohibitingDiscrimination": "Yes",
-                "clearContracting": "No",
-                "hazardousWorkingCondition": "Yes",
-                "rightToOrganise": "Yes"
-            },
-            "wages": {
-                "wagesProcessing": 40000.00,
-                "wagesHarvesting": 14124.00,
-                "wagesCoffee": 500000.00,
-                "ruralMinimumWage": 20000.00,
-                "nationalMinimumWage": 20000.00,
-                "wageDistribution": "Yes",
-                "wageLandprep": 50.41,
-                "wageSowing": 50.41,
-                "wageWeeding": 50.41,
-                "wagePesticide": 50.41,
-                "wageFertilizer": 50.41,
-                "wageMachine": 50.41,
-                "wageOther": 50.41,
-                "permMaleWorker": 5,
-                "permFemaleWorker": 4,
-                "tempMaleWorker": 8,
-                "tempFemaleWorker": 7,
-                "familyWorker": 4
-            },
-            "accidents": {
-                "noOfAccidents": 1,
-                "fatalInjury": 0,
-                "resumeWork": 0,
-                "fatalInjuryFamily": 1,
-                "resumeWorkFamily": 0
-            }
-        },
-        "economic": {
-            "coffeeProfit": 400000.5,
-            "productivity": {
-                "coffeeProductiveArea": 2.12,
-                "amountHarvested": 2500,
-                "formOfCoffee": "Dry cherry"
-            },
-            "productionCosts": {
-                "fertilizers": {
-                    "amount": 250000,
-                    "percentage": 55
-                },
-                "pesticides": {
-                    "amount": 20500,
-                    "percentage": 90
-                },
-                "hiredLabour": {
-                    "amount": 25044,
-                    "percentage": 98
-                },
-                "plantingMaterial": {
-                    "amount": 12058,
-                    "percentage": 100
-                },
-                "renovation": {
-                    "amount": 32430,
-                    "percentage": 100
-                },
-                "deductionsByBuyers": {
-                    "amount": 0,
-                    "percentage": 0
-                },
-                "rentOfLand": {
-                    "amount": 23430,
-                    "percentage": 50
-                },
-                "energy": {
-                    "amount": 256000,
-                    "percentage": 90
-                },
-                "irrigation": {
-                    "amount": 34000,
-                    "percentage": 90
-                },
-                "capitalAssets": {
-                    "amount": 34234,
-                    "percentage": 90
-                },
-                "cultivationPractices": {
-                    "amount": 56546,
-                    "percentage": 90
-                },
-                "traceabilityAndRecordKeeping": {
-                    "amount": 21123,
-                    "percentage": 90
-                },
-                "plantingReforestation": {
-                    "amount": 256000,
-                    "percentage": 90
-                },
-                "training": {
-                    "amount": 56000,
-                    "percentage": 90
-                },
-                "interest": {
-                    "amount": 23432,
-                    "percentage": 90
-                },
-                "cropInsurance": {
-                    "amount": 3433,
-                    "percentage": 90
-                },
-                "cooperativeFees": {
-                    "amount": 4344,
-                    "percentage": 90
-                },
-                "unpaidFamilyLabour": {
-                    "amount": 34324,
-                    "percentage": 90
-                },
-                "transportation": {
-                    "amount": 25600,
-                    "percentage": 90
-                },
-                "other": {
-                    "amount": 1851,
-                    "percentage": 50
-                }
-            },
-            "price": {
-                "totalCoffeeRevenue": 25800,
-                "premiumReceived": 2356,
-                "kgSold": 2510
-            },
-            "labourCostDistribution": {
-                "replanting-rejuvenation": 15,
-                "grassControlling": 15,
-                "branchBudsControlling": 15,
-                "irrigationWatering": 15,
-                "pesticideApplication": 15,
-                "fertilizerApplication": 15,
-                "harvesting": 5,
-                "processing": 5
-            } 
-        },
-        "environmental": {
-            "forestEcosystemProtection": {
-                "areaConvertedLand": {
-                    "landConversion": "Yes",
-                    "absoluteArea": 0.80,
-                    "landConversionType": "Wetland",
-                    "landConversionYear": 1998
-                },
-                "ecosystemProtection": 45.20
-            },
-            "fertilizerUse": [
-                {
-                    "useBasedOnProfessionalAssessment": "Yes",
-                    "productName": "NPK 16-16-16",
-                    "activeIngredient": {
-                        "N": 16,
-                        "P": 16,
-                        "K": 16
-                    },
-                    "usesPerHectare": 56
-                },
-                {
-                    "useBasedOnProfessionalAssessment": "No",
-                    "productName": "Animal Waste",
-                    "activeIngredient": {
-                        "N": 0,
-                        "P": 0,
-                        "K": 0
-                    },
-                    "usesPerHectare": 560
-                }
-            ],
-            "water": {
-                "waterConservation": {
-                    "waterSource": "River/Stream",
-                    "irrigationSystem": "Basin",
-                    "waterUses": 253000.00,
-                    "createBasin": "Yes",
-                    "dripIrrigation": "No",
-                    "waterCatchments": "Yes",
-                    "waterEfficientProcessing": "No"
-                },
-                "waterContamination": {
-                    "preventUntreatedWater": "Yes",
-                    "noPesticideCleaningNearWater": "No",
-                    "noLivestockNearWater": "Yes",
-                    "noDomesticDischarge": "Yes"
-                }
-            },
-            "pestControl": {
-                "ipmPractices": {
-                    "conductRegularVisualExaminations": "Yes",
-                    "pestRepelSpecies": "No",
-                    "useNaturalPesticides": "Yes",
-                    "applyAfterIdentifying": "No",
-                    "predatorPlaces": "Yes",
-                    "recordPestInfestation": "No"
-                },
-                "pesticideUses": [
-                    {
-                        "pesticideName": "Mancozeb",
-                        "activeIngredient": {
-                            "ingredient1": "Active Ingredient 1",
-                            "ingredient2": "Active Ingredient 2"
-                        },
-                        "usesPerHectare": 45.5,
-                        "numberOfApplication": 2
-                    },
-                    {
-                        "pesticideName": "Dimethoate",
-                        "activeIngredient": {
-                            "ingredient1": "Active Ingredient 1",
-                            "ingredient2": "Active Ingredient 2"
-                        },
-                        "usesPerHectare": 15.1,
-                        "numberOfApplication": 1
-                    }
-                ],
-                "useOfBannedPesticides": "No",
-                "pestsInfection": [
-                    {
-                        "pestName": "Pink Disease",
-                        "%AffectedCrops": 5.8
-                    },
-                    {
-                        "pestName": "Leaf Rust",
-                        "%AffectedCrops": 2.1
-                    }
-                ]
-            },
-            "soilConservation": {
-                "soilType": "Bazal soil",
-                "soilMoist": "Moist",
-                "soilDrain": "Good",
-                "checkDams": "Yes",
-                "interplanting": "No",
-                "contourPlanting": "No",
-                "recyclingOrganicMatter": "Yes",
-                "cropResidueManagementPractices": "Yes",
-                "liveFences": "Yes"
-            },
-            "soilAnalysisReport": {
-                "pHKCl": 4.32,
-                "organicMatter": 3.42,
-                "N": 0.16,
-                "P2O5": 6.30,
-                "K2O5": 12.40,
-                "Ca2+": 2.80,
-                "Mg2+": 1.00,
-                "Clay": 59.40,
-                "Loam": 36.04,
-                "Sand": 4.56
-            },
-            "climateChange": {
-                "rainfall": 2.5
-            },
-            "energyUses": {
-                "electicityUses": 200.0,
-                "coalUses": 100.5,
-                "oil-petrol-dieselUses": 40.9,
-                "gasUses": 58.3
-            }
-        }          
-    }
+	},
+	"general-farmer": {
+		"farmerId": {
+			"organisation": "Chamber of Commerce, Burundi",
+			"identifier": "1035413151",
+			"timestamp": "2010-05-21"
+		},
+		"name": {
+			"firstName": "Carlos",
+			"lastName": "de la Huerta"
+		},
+		"address": {
+			"streetAddress": "1600 Amphitheatre Pkwy",
+			"adminAreaLevel4/village": "village1",
+			"adminAreaLevel3/district/city": "city1",
+			"adminAreaLevel2/state/province": "PR",
+			"zipCode": "858101",
+			"adminAreaLevel1/countryName": "Burundi"
+		},
+		"yearOfBirth": 1974,
+		"gender": "M",
+		"farmIds": [
+			{
+				"identifier": "2345",
+				"organisation": "Land register of Burundi",
+				"timestamp": "1998-12-28"
+			}
+		],
+		"thirdPartyIds": [
+			{
+				"identifier": "N2786-Q5572-H8123-S9007",
+				"organisation": "UN Blue number",
+				"timestamp": "2018-12-08"
+			},
+			{
+				"identifier": "514356411",
+				"organisation": "COSA",
+				"timestamp": "2017-12-30"
+			}
+		]
+	},
+	"social-farmer": {
+		"povertyLevel": {
+			"householdMembers": 3,
+			"totalHouseholdIncome": 20.58
+		},
+		"childLabour": {
+			"workingTask": [
+				"Applying chemical pesticides",
+				"Using hazardous machinery"
+			],
+			"workingHour": 3,
+			"schoolAgeHouseholdMembers": 33.3,
+			"hazardousProhibition": "No"
+		}
+	},
+	"general-farm": {
+		"farmId": {
+			"identifier": "2345",
+			"organisation": "Land register of Burundi",
+			"timestamp": "1998-12-28"
+		},
+		"farmerId": {
+			"organisation": "Chamber of Commerce, Burundi",
+			"identifier": "1035413151",
+			"timestamp": "2010-05-21"
+		},
+		"address": {
+			"streetAddress": "1600 Amphitheatre Pkwy",
+			"adminAreaLevel4/village": "village1",
+			"adminAreaLevel3/district/city": "city1",
+			"adminAreaLevel2/state/province": "BR-01",
+			"zipCode": "45856",
+			"adminAreaLevel1/countryName": "Burundi"
+		},
+		"farmOwnership": "Rented",
+		"totalFarmSize": 16.25,
+		"totalAreaCoffee": 14.48,
+		"location": {
+			"coordinates": [
+				125.25,
+				125.25
+			],
+			"farmShape": [
+				[
+					125.45,
+					145.45
+				],
+				[
+					125.23,
+					125.78
+				],
+				[
+					125.46,
+					142.25
+				]
+			],
+			"positionTakenAt": "Middle of the farm",
+			"altitude": 256.45,
+			"precision": 10.4
+		}
+	},
+	"social-farm": {
+		"labourPractices": {
+			"prohibitingDiscrimination": "Yes",
+			"clearContracting": "No",
+			"hazardousWorkingCondition": "Yes",
+			"rightToOrganise": "Yes"
+		},
+		"wages": {
+			"wagesProcessing": 40000.00,
+			"wagesHarvesting": 14124.00,
+			"wagesCoffee": 500000.00,
+			"ruralMinimumWage": 20000.00,
+			"nationalMinimumWage": 20000.00,
+			"wageDistribution": "Yes",
+			"wageLandprep": 50.41,
+			"wageSowing": 50.41,
+			"wageWeeding": 50.41,
+			"wagePesticide": 50.41,
+			"wageFertilizer": 50.41,
+			"wageMachine": 50.41,
+			"wageOther": 50.41,
+			"permMaleWorker": 5,
+			"permFemaleWorker": 4,
+			"tempMaleWorker": 8,
+			"tempFemaleWorker": 7,
+			"familyWorker": 4
+		},
+		"accidents": {
+			"noOfAccidents": 1,
+			"fatalInjury": 0,
+			"resumeWork": 0,
+			"fatalInjuryFamily": 1,
+			"resumeWorkFamily": 0
+		}
+	},
+	"economic-farm": {
+		"coffeeProfit": 400000.5,
+		"productivity": {
+			"coffeeProductiveArea": 2.12,
+			"amountHarvested": 2500,
+			"formOfCoffee": "Dry cherry"
+		},
+		"productionCosts": {
+			"fertilizers": {
+				"amount": 250000,
+				"percentage": 55
+			},
+			"pesticides": {
+				"amount": 20500,
+				"percentage": 90
+			},
+			"hiredLabour": {
+				"amount": 25044,
+				"percentage": 98
+			},
+			"plantingMaterial": {
+				"amount": 12058,
+				"percentage": 100
+			},
+			"renovation": {
+				"amount": 32430,
+				"percentage": 100
+			},
+			"deductionsByBuyers": {
+				"amount": 0,
+				"percentage": 0
+			},
+			"rentOfLand": {
+				"amount": 23430,
+				"percentage": 50
+			},
+			"energy": {
+				"amount": 256000,
+				"percentage": 90
+			},
+			"irrigation": {
+				"amount": 34000,
+				"percentage": 90
+			},
+			"capitalAssets": {
+				"amount": 34234,
+				"percentage": 90
+			},
+			"cultivationPractices": {
+				"amount": 56546,
+				"percentage": 90
+			},
+			"traceabilityAndRecordKeeping": {
+				"amount": 21123,
+				"percentage": 90
+			},
+			"plantingReforestation": {
+				"amount": 256000,
+				"percentage": 90
+			},
+			"training": {
+				"amount": 56000,
+				"percentage": 90
+			},
+			"interest": {
+				"amount": 23432,
+				"percentage": 90
+			},
+			"cropInsurance": {
+				"amount": 3433,
+				"percentage": 90
+			},
+			"cooperativeFees": {
+				"amount": 4344,
+				"percentage": 90
+			},
+			"unpaidFamilyLabour": {
+				"amount": 34324,
+				"percentage": 90
+			},
+			"transportation": {
+				"amount": 25600,
+				"percentage": 90
+			},
+			"other": {
+				"amount": 1851,
+				"percentage": 50
+			}
+		},
+		"price": {
+			"totalCoffeeRevenue": 25800,
+			"premiumReceived": 2356,
+			"kgSold": 2510
+		},
+		"labourCostDistribution": {
+			"replanting-rejuvenation": 15,
+			"grassControlling": 15,
+			"branchBudsControlling": 15,
+			"irrigationWatering": 15,
+			"pesticideApplication": 15,
+			"fertilizerApplication": 15,
+			"harvesting": 5,
+			"processing": 5
+		}
+	},
+	"environmental-farm": {
+		"forestEcosystemProtection": {
+			"areaConvertedLand": {
+				"landConversion": "Yes",
+				"absoluteArea": 0.80,
+				"landConversionType": "Wetland",
+				"landConversionYear": 1998
+			},
+			"ecosystemProtection": 45.20
+		},
+		"fertilizerUse": [
+			{
+				"useBasedOnProfessionalAssessment": "Yes",
+				"productName": "NPK 16-16-16",
+				"activeIngredient": {
+					"N": 16,
+					"P": 16,
+					"K": 16
+				},
+				"usesPerHectare": 56
+			},
+			{
+				"useBasedOnProfessionalAssessment": "No",
+				"productName": "Animal Waste",
+				"activeIngredient": {
+					"N": 0,
+					"P": 0,
+					"K": 0
+				},
+				"usesPerHectare": 560
+			}
+		],
+		"water": {
+			"waterConservation": {
+				"waterSource": "River/Stream",
+				"irrigationSystem": "Basin",
+				"waterUses": 253000.00,
+				"createBasin": "Yes",
+				"dripIrrigation": "No",
+				"waterCatchments": "Yes",
+				"waterEfficientProcessing": "No"
+			},
+			"waterContamination": {
+				"preventUntreatedWater": "Yes",
+				"noPesticideCleaningNearWater": "No",
+				"noLivestockNearWater": "Yes",
+				"noDomesticDischarge": "Yes"
+			}
+		},
+		"pestControl": {
+			"ipmPractices": {
+				"conductRegularVisualExaminations": "Yes",
+				"pestRepelSpecies": "No",
+				"useNaturalPesticides": "Yes",
+				"applyAfterIdentifying": "No",
+				"predatorPlaces": "Yes",
+				"recordPestInfestation": "No"
+			},
+			"pesticideUses": [
+				{
+					"pesticideName": "Mancozeb",
+					"activeIngredient": {
+						"ingredient1": "Active Ingredient 1",
+						"ingredient2": "Active Ingredient 2"
+					},
+					"usesPerHectare": 45.5,
+					"numberOfApplication": 2
+				},
+				{
+					"pesticideName": "Dimethoate",
+					"activeIngredient": {
+						"ingredient1": "Active Ingredient 1",
+						"ingredient2": "Active Ingredient 2"
+					},
+					"usesPerHectare": 15.1,
+					"numberOfApplication": 1
+				}
+			],
+			"useOfBannedPesticides": "No",
+			"pestsInfection": [
+				{
+					"pestName": "Pink Disease",
+					"%AffectedCrops": 5.8
+				},
+				{
+					"pestName": "Leaf Rust",
+					"%AffectedCrops": 2.1
+				}
+			]
+		},
+		"soilConservation": {
+			"soilType": "Bazal soil",
+			"soilMoist": "Moist",
+			"soilDrain": "Good",
+			"checkDams": "Yes",
+			"interplanting": "No",
+			"contourPlanting": "No",
+			"recyclingOrganicMatter": "Yes",
+			"cropResidueManagementPractices": "Yes",
+			"liveFences": "Yes"
+		},
+		"soilAnalysisReport": {
+			"pHKCl": 4.32,
+			"organicMatter": 3.42,
+			"N": 0.16,
+			"P2O5": 6.30,
+			"K2O5": 12.40,
+			"Ca2+": 2.80,
+			"Mg2+": 1.00,
+			"Clay": 59.40,
+			"Loam": 36.04,
+			"Sand": 4.56
+		},
+		"climateChange": {
+			"rainfall": 2.5
+		},
+		"energyUses": {
+			"electicityUses": 200.0,
+			"coalUses": 100.5,
+			"oil-petrol-dieselUses": 40.9,
+			"gasUses": 58.3
+		}
+	}
 }
