@@ -82,6 +82,8 @@ The production year is defined as the end of the last harvest to the end of the 
 
    **Type**: *string*
 
+   **Examples**: '2016-06', '2019-01'
+
    **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
 
 
@@ -92,6 +94,8 @@ The production year is defined as the end of the last harvest to the end of the 
    **Property name**: end
 
    **Type**: *string*
+
+   **Examples**: '2016-10', '2019-08'
 
    **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
 
@@ -395,38 +399,7 @@ Globally Unique ID of the farmer of this farm
     <script src="_static/docson/widget.js" data-schema="../schema/global-unique-id.json"></script>
 
 
-4.3 Ownership of the farm
-^^^^^^^^^^^^^^^^^^^^^^^^^
-.. topic:: Details:
-
-   **Property name**: farmOwnership
-
-   **Type**: *string*
-
-   **Allowed values**: 'Owned', 'Rented', 'Others'
-
-
-TODO
-
-
-4.4 Location of the farm
-^^^^^^^^^^^^^^^^^^^^^^^^
-.. topic:: Details:
-
-   **Property name**: location
-
-   **Reference**: *farm-location.json*
-
-
-GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.
-
-
-.. raw:: html
-
-    <script src="_static/docson/widget.js" data-schema="../schema/farm-location.json"></script>
-
-
-4.5 Farm address
+4.3 Farm address
 ^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
@@ -443,7 +416,21 @@ This should be the location of the farm itself (main plot), not the home of the 
     <script src="_static/docson/widget.js" data-schema="../schema/address.json"></script>
 
 
-4.6 Total farm size (ha)
+4.4 Ownership of the farm
+^^^^^^^^^^^^^^^^^^^^^^^^^
+.. topic:: Details:
+
+   **Property name**: farmOwnership
+
+   **Type**: *string*
+
+   **Allowed values**: 'Owned', 'Rented', 'Others'
+
+
+Captures the information on ownership status of the farm 
+
+
+4.5 Total farm size (ha)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
@@ -460,7 +447,7 @@ Total Farm size refers to total property size, including land used to grow crops
 Best practice is to collect response in any given unit, and then perform conversion to a standard international unit (ha). Data validation should ensure that the total area planted in coffee should be less than the total farm size. It is ok to rely on farmer recall although more rigorous estimates will include GPS or polygonal mapping data. Consider that farms may contain multiple plots (plots are farm land areas that are not connected, or farm areas that are managed differently, or both). Make sure to add all relevant plots managed by members of a household together (that is, the farm area should coincide with the land used to account for the farm cost and revenue data being reported).
 
 
-4.7 Total Area planted in Coffee (ha)
+4.6 Total Area planted in Coffee (ha)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
@@ -475,6 +462,23 @@ Sum of coffee farm areas from producers in the sustainability program or supply 
 
 
 Area under coffee production can also be triangulated with other pieces of data collected (e.g., trees planted per unit land (density rate) and/or total number of trees planted).
+
+
+4.7 Location of the farm
+^^^^^^^^^^^^^^^^^^^^^^^^
+.. topic:: Details:
+
+   **Property name**: location
+
+   **Reference**: *farm-location.json*
+
+
+GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.
+
+
+.. raw:: html
+
+    <script src="_static/docson/widget.js" data-schema="../schema/farm-location.json"></script>
 
 
 4.8 Third-party identifier
