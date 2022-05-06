@@ -11,6 +11,7 @@
   "properties": {
     "coordinates": {
       "title": "Front door geolocation, using custom schema",
+      "description": "Latitude and Longitude Information",
       "type": "array",
       "items": {
         "type": "number"
@@ -18,11 +19,15 @@
       "minItems": 2,
       "maxItems": 2
     },
+    "precision": {
+      "title": "Precision",
+      "description": "Accuracy with which coordinates were captured by the device",
+      "type": "number"
+    },
     "farmShape": {
-      "type": [
-        "array",
-        "null"
-      ],
+      "title": "Farm shape",
+      "description": "List of coordinates which describes the shape of the farm",
+      "type": "array",
       "minItems": 3,
       "items": {
         "type": "array",
@@ -52,9 +57,8 @@
       ]
     },
     "altitude": {
-      "type": "number"
-    },
-    "precision": {
+      "title": "Altitude",
+      "description": "Altitude information in meters",
       "type": "number"
     }
   }

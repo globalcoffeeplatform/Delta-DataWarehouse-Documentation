@@ -6,7 +6,10 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "adminAreaLevel1/countryName"
+    "adminAreaLevel1/countryName",
+    "adminAreaLevel2/state/province",
+    "adminAreaLevel3/district/city",
+    "adminAreaLevel4/village"
   ],
   "properties": {
     "streetAddress": {
@@ -21,22 +24,22 @@
     },
     "adminAreaLevel4/village": {
       "title": "Admin Area Level 4 (village)",
-      "description": "The level 4 admin area or village.",
+      "description": "Use Local Name.",
       "type": "string"
     },
     "adminAreaLevel3/district/city": {
       "title": "Admin Area Level 3 (district or city)",
-      "description": "The level 3 admin area or district or city.",
+      "description": "Use Local Name.",
       "type": "string"
     },
     "adminAreaLevel2/state/province": {
       "title": "Admin Area Level 2 (state or province)",
-      "description": "The level 2 admin area or state or province.",
+      "description": "State Name in ISO Format.",
       "type": "string"
     },
     "adminAreaLevel1/countryName": {
       "title": "Admin Area Level 1 (country name)",
-      "description": "The level 1 admin area or country name.",
+      "description": "Country Name in ISO Format. Use provided country names.",
       "$comment": "List of countries from http://country.io/names.json",
       "$ref": "#/definitions/country-names"
     }

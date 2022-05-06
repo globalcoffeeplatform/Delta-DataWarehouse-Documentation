@@ -11,6 +11,8 @@
   "properties": {
     "workingTask": {
       "type": "array",
+      "title": "Working task",
+      "description": "Working tasks of the child (to be contextualised to the farming conditions).",
       "items": {
         "type": "string",
         "enum": [
@@ -22,19 +24,22 @@
       }
     },
     "workingHour": {
+      "title": "Working hour",
+      "description": "Average Working Hour per day",
       "type": "number",
       "minimum": 0,
-      "maximum": 24      
+      "maximum": 24
     },
     "schoolAgeHouseholdMembers": {
       "title": "School-age household members",
-      "description": "% of school-age household members, under age 18, who have completed appropriate grade level for their age",
+      "description": "% of school-age household members, under age 18, who have completed appropriate grade level for their age.",
+      "type": "number",
       "minimum": 0,
       "maximum": 100
     },
     "hazardousProhibition": {
       "title": "Prohibition of children in hazardous working conditions",
-      "description": "Are young workers (those under age 18) working in hazardous conditions (applying chemical pesticides, using hazardous machinery, moving excessive weights/loads, etc.)",
+      "description": "Are young workers (those under age 18) working in hazardous conditions (applying chemical pesticides, using hazardous machinery, moving excessive weights/loads, etc.).",
       "type": "string",
       "enum": [
         "Yes",

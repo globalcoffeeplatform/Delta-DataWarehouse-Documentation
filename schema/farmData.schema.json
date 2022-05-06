@@ -57,12 +57,20 @@
                         "start": {
                             "title": "The start of the projection year in YYYY-MM",
                             "type": "string",
-                            "pattern": "^\\d{4}-(0[1-9]|1[0-2])$"
+                            "pattern": "^\\d{4}-(0[1-9]|1[0-2])$",
+                            "examples": [
+                                "2016-06",
+                                "2019-01"
+                              ]
                         },
                         "end": {
                             "title": "The end of the projection year in YYYY-MM",
                             "type": "string",
-                            "pattern": "^\\d{4}-(0[1-9]|1[0-2])$"
+                            "pattern": "^\\d{4}-(0[1-9]|1[0-2])$",
+                            "examples": [
+                                "2016-10",
+                                "2019-08"
+                              ]
                         }
                     }
                 }
@@ -76,7 +84,6 @@
             "$example-data": "./example-data/farmer-general.json",
             "required": [
                 "farmerId",
-                "name",
                 "address",
                 "yearOfBirth",
                 "gender",
@@ -186,11 +193,10 @@
             "required": [
                 "farmId",
                 "farmerId",
-                "farmOwnership",
-                "location",
                 "address",
                 "totalFarmSize",
-                "totalAreaCoffee"
+                "totalAreaCoffee",
+                "location"
             ],
             "properties": {
                 "farmId": {
@@ -203,26 +209,21 @@
                     "description": "Globally Unique ID of the farmer of this farm",
                     "$ref": "./global-unique-id.json"
                 },
+                "address": {
+                    "title": "Farm address",
+                    "description": "This should be the location of the farm itself (main plot), not the home of the farmer, if different.",
+                    "additionalProperties": false,
+                    "$ref": "./address.json"
+                },
                 "farmOwnership": {
                     "title": "Ownership of the farm",
-                    "description": "TODO",
+                    "description": "Captures the information on ownership status of the farm ",
                     "type": "string",
                     "enum": [
                         "Owned",
                         "Rented",
                         "Others"
                     ]
-                },
-                "location": {
-                    "title": "Location of the farm",
-                    "description": "GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.",
-                    "$ref": "./farm-location.json"
-                },
-                "address": {
-                    "title": "Farm address",
-                    "description": "This should be the location of the farm itself (main plot), not the home of the farmer, if different.",
-                    "additionalProperties": false,
-                    "$ref": "./address.json"
                 },
                 "totalFarmSize": {
                     "title": "Total farm size (ha)",
@@ -237,6 +238,11 @@
                     "$extended-description": "Area under coffee production can also be triangulated with other pieces of data collected (e.g., trees planted per unit land (density rate) and/or total number of trees planted).",
                     "type": "number",
                     "exclusiveMinimum": 0
+                },
+                "location": {
+                    "title": "Location of the farm",
+                    "description": "GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.",
+                    "$ref": "./farm-location.json"
                 },
                 "thirdPartyIds": {
                     "title": "Third-party identifier",
@@ -258,7 +264,6 @@
             "additionalProperties": false,
             "$example-data": "./example-data/farm-social.json",
             "required": [
-                "labourPractices",
                 "wages",
                 "accidents"
             ],
