@@ -45,7 +45,7 @@ public sealed class GenerateRst
             var objectProperties = JObject.Parse(property.Value.ToString());
             var type = objectProperties.GetValue("type");
             if (type is null) throw new InvalidOperationException("No type found");
-            if (objectProperties.ContainsKey("type") && type.ToString() == "object")
+            if (type.ToString() == "object")
             {
                 propertyList.Add(property);
                 continue; // Save for later
