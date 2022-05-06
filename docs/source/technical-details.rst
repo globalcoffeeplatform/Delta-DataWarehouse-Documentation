@@ -9,4 +9,4 @@ Overview of JSON schema
 
 .. raw:: html
 
-   <script src="_static/docson/widget.js" data-schema="../schema/global-coffee-data-standard.schema.json"></script>
+   <script src="_static/docson/widget.js" data-schema="../schema/farmData.schema.json"></script>

@@ -8,6 +8,10 @@ xcopy /D /Y ..\schema\*.json  source\_static\schema\
 REM Paul Meems: Copy example data files to example data folder in documentation:
 xcopy /D /Y ..\example-data\*.json  source\_static\example-data\
 
+REM D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\docs\source\_static\images
+REM D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\docs\build\html\_images
+REM D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\docs\build\html\_static\images
+ 
 
 REM Command file for Sphinx documentation
 

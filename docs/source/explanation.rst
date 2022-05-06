@@ -74,50 +74,34 @@ The version number of the schema. When not provided the latest version of the sc
 The production year is defined as the end of the last harvest to the end of the corresponding harvest before that (12 month period).
 
 
-1.3.1 The start of the projection year in YYYYMM
-------------------------------------------------
+1.3.1 The start of the projection year in YYYY-MM
+-------------------------------------------------
 .. topic:: Details:
 
    **Property name**: start
 
-   **Type**: *integer*
+   **Type**: *string*
 
-   **Minimum**: *199000*
-
-   **Maximum**: *210000*
+   **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
 
 
-1.3.2 The end of the projection year in YYYYMM
-----------------------------------------------
+1.3.2 The end of the projection year in YYYY-MM
+-----------------------------------------------
 .. topic:: Details:
 
    **Property name**: end
 
-   **Type**: *integer*
+   **Type**: *string*
 
-   **Minimum**: *199000*
-
-   **Maximum**: *210000*
+   **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
 
 
-********
-2 Farmer
-********
+********************************
+2 General farmer characteristics
+********************************
 .. topic:: Details:
 
-   **Property name**: farmer
-
-   **Type**: *object*
-
-
-The farmer characteristics
-
-
-2.1 General farmer characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. topic:: Details:
-
-   **Property name**: general
+   **Property name**: general-farmer
 
    **Type**: *object*
 
@@ -137,8 +121,8 @@ The general farmer characteristics
 
     </div>
 
-2.1.1 Unique ID of the farmer
------------------------------
+2.1 Unique ID of the farmer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: farmerId
@@ -157,8 +141,8 @@ Each producer should have a unique ID. Optimally this can be a national ID, but 
     <script src="_static/docson/widget.js" data-schema="../schema/global-unique-id.json"></script>
 
 
-2.1.2 Name of the farmer
-------------------------
+2.2 Name of the farmer
+^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: name
@@ -174,8 +158,8 @@ First and last name(s) of the farmer surveyed should be collected in separate fi
     <script src="_static/docson/widget.js" data-schema="../schema/name.json"></script>
 
 
-2.1.3 The address of the farm
------------------------------
+2.3 The address of the farm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: address
@@ -191,8 +175,8 @@ Generally, data should include Country and then State/Department and Municipalit
     <script src="_static/docson/widget.js" data-schema="../schema/address.json"></script>
 
 
-2.1.4 Year of birth
--------------------
+2.4 Year of birth
+^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: yearOfBirth
@@ -212,8 +196,8 @@ Best practice is to use 'Year of Birth' as opposed to age. Age has to be updated
 Data point used to understand the relative presence of youth and calculate youth engagement: % of producers in the sustainability program or supply chain 35 years old and under.
 
 
-2.1.5 Gender
-------------
+2.5 Gender
+^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: gender
@@ -226,8 +210,8 @@ Data point used to understand the relative presence of youth and calculate youth
 Data point used to understand the relative presence of women and to calculate women's engagement and the outcomes they experience as diverse from men: % of women in the sustainability program or supply chain.
 
 
-2.1.6 Farm Ids
---------------
+2.6 Farm Ids
+^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: farmIds
@@ -244,8 +228,8 @@ Data point used to understand the relative presence of women and to calculate wo
 Which farms belong to this farmer. At least one is required.
 
 
-2.1.7 Third-party identifier
-----------------------------
+2.7 Third-party identifier
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: thirdPartyIds
@@ -260,11 +244,12 @@ Which farms belong to this farmer. At least one is required.
 When this dataset is reused by another organisation who needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.
 
 
-2.2 Social farmer characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************
+3 Social farmer characteristics
+*******************************
 .. topic:: Details:
 
-   **Property name**: social
+   **Property name**: social-farmer
 
    **Type**: *object*
 
@@ -284,8 +269,8 @@ The social farmer characteristics
 
     </div>
 
-2.2.1 Poverty level
--------------------
+3.1 Poverty level
+^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: povertyLevel
@@ -308,8 +293,8 @@ An organisation may choose to use the PPI score evaluation of the propensity of 
     <script src="_static/docson/widget.js" data-schema="../schema/poverty-level.json"></script>
 
 
-2.2.2 Child labour
-------------------
+3.2 Child labour
+^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: childLabour
@@ -332,8 +317,8 @@ We recognize that child labour can also occur outside the family setting. At thi
     <script src="_static/docson/widget.js" data-schema="../schema/child-labour.json"></script>
 
 
-2.2.3 Days food scarcity
-------------------------
+3.3 Days food scarcity
+^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: daysFoodScarcity
@@ -351,24 +336,12 @@ The simple approach depends on asking the producer the number of days during the
 More comprehensive nutritional indicators can be expensive and require significant technical ability, time and resources to carry out effectively, so instead the focus is on days of food insecurity as a proxy. Note that while this survey question is often asked to the head of household, this indicator is best expressed when it includes multiple perspectives in the household. This indicator is an important human development issue and a core indicator for social justice.
 
 
-******
-3 Farm
-******
+******************************
+4 General farm characteristics
+******************************
 .. topic:: Details:
 
-   **Property name**: farm
-
-   **Type**: *object*
-
-
-The farm characteristics
-
-
-3.1 General farm characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. topic:: Details:
-
-   **Property name**: general
+   **Property name**: general-farm
 
    **Type**: *object*
 
@@ -388,8 +361,8 @@ The general farm characteristics
 
     </div>
 
-3.1.1 Farm Id
--------------
+4.1 Farm Id
+^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: farmId
@@ -405,8 +378,8 @@ Globally Unique ID of the recording of the farm at a specific time and by a spec
     <script src="_static/docson/widget.js" data-schema="../schema/global-unique-id.json"></script>
 
 
-3.1.2 Farmer Id
----------------
+4.2 Farmer Id
+^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: farmerId
@@ -422,8 +395,8 @@ Globally Unique ID of the farmer of this farm
     <script src="_static/docson/widget.js" data-schema="../schema/global-unique-id.json"></script>
 
 
-3.1.3 Ownership of the farm
----------------------------
+4.3 Ownership of the farm
+^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: farmOwnership
@@ -436,8 +409,8 @@ Globally Unique ID of the farmer of this farm
 TODO
 
 
-3.1.4 Location of the farm
---------------------------
+4.4 Location of the farm
+^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: location
@@ -453,8 +426,8 @@ GPS should be captured for each farm plot if possible. GPS readings should be ta
     <script src="_static/docson/widget.js" data-schema="../schema/farm-location.json"></script>
 
 
-3.1.5 Farm address
-------------------
+4.5 Farm address
+^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: address
@@ -470,8 +443,8 @@ This should be the location of the farm itself (main plot), not the home of the 
     <script src="_static/docson/widget.js" data-schema="../schema/address.json"></script>
 
 
-3.1.6 Total farm size (ha)
---------------------------
+4.6 Total farm size (ha)
+^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: totalFarmSize
@@ -487,8 +460,8 @@ Total Farm size refers to total property size, including land used to grow crops
 Best practice is to collect response in any given unit, and then perform conversion to a standard international unit (ha). Data validation should ensure that the total area planted in coffee should be less than the total farm size. It is ok to rely on farmer recall although more rigorous estimates will include GPS or polygonal mapping data. Consider that farms may contain multiple plots (plots are farm land areas that are not connected, or farm areas that are managed differently, or both). Make sure to add all relevant plots managed by members of a household together (that is, the farm area should coincide with the land used to account for the farm cost and revenue data being reported).
 
 
-3.1.7 Total Area planted in Coffee (ha)
----------------------------------------
+4.7 Total Area planted in Coffee (ha)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: totalAreaCoffee
@@ -504,8 +477,8 @@ Sum of coffee farm areas from producers in the sustainability program or supply 
 Area under coffee production can also be triangulated with other pieces of data collected (e.g., trees planted per unit land (density rate) and/or total number of trees planted).
 
 
-3.1.8 Third-party identifier
-----------------------------
+4.8 Third-party identifier
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: thirdPartyIds
@@ -520,11 +493,12 @@ Area under coffee production can also be triangulated with other pieces of data 
 When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.
 
 
-3.2 Social farm characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*****************************
+5 Social farm characteristics
+*****************************
 .. topic:: Details:
 
-   **Property name**: social
+   **Property name**: social-farm
 
    **Type**: *object*
 
@@ -544,8 +518,8 @@ The social farm characteristics
 
     </div>
 
-3.2.1 Labour Practices
-----------------------
+5.1 Labour Practices
+^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: labourPractices
@@ -566,8 +540,8 @@ These concepts are common to many sustainability standards and the approach is b
     <script src="_static/docson/widget.js" data-schema="../schema/labour-practices.json"></script>
 
 
-3.2.2 Wages
------------
+5.2 Wages
+^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: wages
@@ -592,8 +566,8 @@ Organisations may wish to participate in working groups to define and measure li
     <script src="_static/docson/widget.js" data-schema="../schema/wages.json"></script>
 
 
-3.2.3 Accidents
----------------
+5.3 Accidents
+^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: accidents
@@ -612,11 +586,12 @@ TODO extended-description
     <script src="_static/docson/widget.js" data-schema="../schema/accidents.json"></script>
 
 
-3.3 Economic farm characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*******************************
+6 Economic farm characteristics
+*******************************
 .. topic:: Details:
 
-   **Property name**: economic
+   **Property name**: economic-farm
 
    **Type**: *object*
 
@@ -636,8 +611,8 @@ The economic farm characteristics
 
     </div>
 
-3.3.1 Coffee Profit
--------------------
+6.1 Coffee Profit
+^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: coffeeProfit
@@ -655,8 +630,8 @@ The simple approach (which avoids the additional time and resources necessary fo
 This simplified approach does not cover asking the producer about revenue and prices for each transaction or amount sold, nor any premiums or deductions. It also factors in only the main costs in the coffee production system (see Cost of Production indicator below).
 
 
-3.3.2 Yield / Productivity
---------------------------
+6.2 Yield / Productivity
+^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: productivity
@@ -675,8 +650,8 @@ For general GBE conversion guidance, please see: http://www.thecoffeeguide.org/c
     <script src="_static/docson/widget.js" data-schema="../schema/productivity.json"></script>
 
 
-3.3.3 Cost of Production
-------------------------
+6.3 Cost of Production
+^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: productionCosts
@@ -714,8 +689,8 @@ This indicator is a Sub-metric for Net Income (or Profit).
     <script src="_static/docson/widget.js" data-schema="../schema/production-costs.json"></script>
 
 
-3.3.4 Average Price
--------------------
+6.4 Average Price
+^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: price
@@ -736,8 +711,8 @@ This approach avoids the additional time and resources necessary for detailed ac
     <script src="_static/docson/widget.js" data-schema="../schema/average-price.json"></script>
 
 
-3.3.5 TODO labourCostDistribution title
----------------------------------------
+6.5 TODO labourCostDistribution title
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: labourCostDistribution
@@ -756,11 +731,12 @@ TODO labourCostDistribution extended description
     <script src="_static/docson/widget.js" data-schema="../schema/labour-costs-distribution.json"></script>
 
 
-3.4 Environmental farm characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+************************************
+7 Environmental farm characteristics
+************************************
 .. topic:: Details:
 
-   **Property name**: environmental
+   **Property name**: environmental-farm
 
    **Type**: *object*
 
@@ -780,8 +756,8 @@ The environmental farm characteristics
 
     </div>
 
-3.4.1 Forest and Ecosystem Protection
--------------------------------------
+7.1 Forest and Ecosystem Protection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: forestEcosystemProtection
@@ -806,8 +782,8 @@ In addition, overlaying gps coordinates of farms (See GPS Coordinate instruction
     <script src="_static/docson/widget.js" data-schema="../schema/forest-ecosystem-protection.json"></script>
 
 
-3.4.2 Fertilizer use
---------------------
+7.2 Fertilizer use
+^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: fertilizerUse
@@ -826,8 +802,8 @@ TODO
     <script src="_static/docson/widget.js" data-schema="../schema/fertillizer-use.json"></script>
 
 
-3.4.3 Water Conservation & Contamination Prevention
----------------------------------------------------
+7.3 Water Conservation & Contamination Prevention
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: water
@@ -866,8 +842,8 @@ Asking about best practice adoption is a standardized way to address this indica
     <script src="_static/docson/widget.js" data-schema="../schema/water.json"></script>
 
 
-3.4.4 Pest control - hazards
-----------------------------
+7.4 Pest control - hazards
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: pestControl
@@ -901,8 +877,8 @@ Focusing on IPM techniques is a globally standardized way to understand pest man
     <script src="_static/docson/widget.js" data-schema="../schema/pest-control.json"></script>
 
 
-3.4.5 Soil Analysis Report
---------------------------
+7.5 Soil Analysis Report
+^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: soilAnalysisReport
@@ -918,8 +894,8 @@ TODO
     <script src="_static/docson/widget.js" data-schema="../schema/soil-analysis-report.json"></script>
 
 
-3.4.6 Soil Conservation
------------------------
+7.6 Soil Conservation
+^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: soilConservation
@@ -952,8 +928,8 @@ Asking about best practice adoption is a standardized way to address this indica
     <script src="_static/docson/widget.js" data-schema="../schema/soil-conservation.json"></script>
 
 
-3.4.7 Climate Change
---------------------
+7.7 Climate Change
+^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: climateChange
@@ -972,8 +948,8 @@ TODO
     <script src="_static/docson/widget.js" data-schema="../schema/climate-change.json"></script>
 
 
-3.4.8 Energy Uses
------------------
+7.8 Energy Uses
+^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: energyUses

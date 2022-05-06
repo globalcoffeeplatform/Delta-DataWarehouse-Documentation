@@ -20,9 +20,10 @@ from recommonmark.parser import CommonMarkParser
 
 # -- Project information -----------------------------------------------------
 
-project = 'Global Coffee Data Standard'
+project = 'Delta DataWarehouse'
+project_long = 'Delta DataWarehouse Documentation'
 copyright = 'Creative Commons Attribution 4.0 International License'
-author = 'Waterwatch Foundation (https://waterwatchcooperative.com/foundation/)'
+author = 'Paul Meems, TopX - IT Solutions (https://www.topx-group.nl/)'
 
 # The short X.Y version
 version = ''
@@ -113,7 +114,7 @@ html_favicon = 'GCP-Favicon.png'
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'GlobalCoffeeDataStandarddoc'
+htmlhelp_basename = 'DeltaDataWarehouseDocumentation'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -140,8 +141,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Global Coffee Data Standard.tex', 'Global Coffee Data Standard Documentation',
-     'Paul Meems', 'manual'),
+    (master_doc, 'Delta-DataWarehouse-Documentation.tex', project,
+     author, 'manual'),
 ]
 
 
@@ -150,8 +151,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'globalcoffeedatastandard', 'Global Coffee Data Standard Documentation',
-     [author], 1)
+    (master_doc, 'deltadatawarehousedocumentation', project_long,
+     author, 1)
 ]
 
 
@@ -161,8 +162,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Global Coffee Data Standard', 'Global Coffee Data Standard Documentation',
-     author, 'Global Coffee Data Standard', 'One line description of project.',
+    (master_doc, project, project_long,
+     author, project, 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -189,4 +190,4 @@ epub_exclude_files = ['search.html']
 todo_include_todos = True
 
 def setup(app):
-    app.add_css_file('css/custom.css?v20190329')
+    app.add_css_file('css/custom.css?v20220506')
