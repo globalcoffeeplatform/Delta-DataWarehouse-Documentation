@@ -17,9 +17,8 @@ Our work has focused on addressing some issues identified through wider adoption
 
 This document outlines a process for managing changes to the Global Coffee Data Standard during the move from a draft version to an officially agreed version, which will be numbered 1.0.
 
-Currently two new projects from the ISEAL Innovation Fund are upcoming:
+Currently the following new projects from the ISEAL Innovation Fund are upcoming:
 
-#. The Information and Data Standard for Sustainability project (IDSS), led by FSC and partners are RA, Fairtrade, ISEAL, GCP, ASI and
 #. The Delta Project with BCI, GCP, partnering with the International Coffee Organisation (ICO) and the International Cotton Advisory Committee (ICAC) to develop common cross-commodity sustainability indicators.
 
 It is expected that the further development, adoption and elaboration of the data standard becomes an integral part of these projects.
@@ -39,7 +38,7 @@ A Standard Stewardship Committee, responsible for giving final approval to forma
 
 Intellectual property
 ---------------------
-The Global Coffee Data Standard is the joint intellectual property of GCP and COSA.
+The Global Coffee Data Standard is the joint intellectual property of GCP and ISEAL.
 
 .. raw:: html
 
