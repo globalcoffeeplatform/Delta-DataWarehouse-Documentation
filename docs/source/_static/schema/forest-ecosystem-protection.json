@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/forest-ecosystem-protection.json",
+  "title": "Forest and Ecosystem Protection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "areaConvertedLand",
+    "ecosystemProtection"
+  ],
+  "properties": {
+    "areaConvertedLand": {
+      "title": "Area converted land",
+      "description": "Land area (in ha) and proportion of the farm that was converted from natural land (e.g.,, forest, savanna) to land used for coffee production in the last 5 years.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "absoluteArea",
+        "landConversion"
+      ],
+      "properties": {
+        "absoluteArea": {
+          "title": "Absolute area in ha",
+          "type": "number",
+          "minimum": 0
+        },
+        "landConversion": {
+          "title": "Land Conversion",
+          "description": "TODO",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "landConversionType": {
+          "title": "Land Conversion Type",
+          "description": "TODO",
+          "type": "string",
+          "enum": [
+            "Forest",
+            "Wetland",
+            "Grassland"
+          ]
+        },
+        "landConversionYear": {
+          "title": "Land Conversion Year",
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2050
+        }
+      }
+    },
+    "ecosystemProtection": {
+      "title": "Forest and ecosystem protection",
+      "description": "% of forest and ecosystem protection practices used on the farm",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/pest-control.json",
+  "title": "Pest control - hazards",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ipmPractices",
+    "useOfBannedPesticides",
+    "pesticideUses",
+    "pestsInfection"
+  ],
+  "properties": {
+    "ipmPractices": {
+      "title": "% of IPM practices employed on the farm",
+      "description": "Focusing on IPM techniques is a globally standardized way to understand pest management best practices without the more costly and time-consuming process of detailing individual pesticides, active ingredients, amount used in local units, etc.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conductRegularVisualExaminations",
+        "useNaturalPesticides",
+        "predatorPlaces",
+        "recordPestInfestation",
+        "pestRepelSpecies",
+        "applyAfterIdentifying"
+      ],
+      "properties": {
+        "conductRegularVisualExaminations": {
+          "title": "Conduct regular visual examinations",
+          "description": "Conduct regular visual examinations of the coffee to detect pests and/or diseases",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "useNaturalPesticides": {
+          "title": "Use natural pesticides",
+          "description": "Use traps, repellants, and natural pesticides",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "predatorPlaces": {
+          "title": "Predator places",
+          "description": "Create or preserve places (including plant species) for beneficial predators of pests to live",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "recordPestInfestation": {
+          "title": "Record pest infestation",
+          "description": "Maintain written record of pest infestation, treatments, and results",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "pestRepelSpecies": {
+          "title": "Pest repel species",
+          "description": "Plant or preserve species that repel pests of the coffee",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "applyAfterIdentifying": {
+          "title": "Apply after identifying",
+          "description": "Apply pesticide or kill pests only after identifying the pest and only at the best time in the pest’s life cycle to permanently reduce its population ",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    },
+    "useOfBannedPesticides": {
+      "title": "Use of banned or hazardous pesticides on the farm",
+      "description": "Are activate ingredients used that are listed under the GCP baseline common code list as unacceptable pesticides or on the red. The list can be referenced as: https://www.globalcoffeeplatform.org/assets/files/GCP_Doc_01_Baseline-Common-Code_v2.1_en.pdf",
+      "$extended-description": "Pesticides include insecticides, fungicides, rodenticides, nematicides, and herbicides.",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "pesticideUses": {
+      "title": "Pesticide Use",
+      "description": "TODO",
+      "type": "array",
+      "additionalProperties": false,
+      "required": [
+        "activeIngredient",
+        "numberOfApplication",
+        "pesticideName",
+        "usesPerHectare"
+      ],
+      "properties": {
+        "activeIngredient": {
+          "title": "Pesticideus Active Ingredient",
+          "description": "TODO",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ingredient1",
+            "ingredient2"
+          ],
+          "properties": {
+            "ingredient1": {
+              "title": "Ingredient 1",
+              "description": "TODO",
+              "type": "string"
+            },
+            "ingredient2": {
+              "title": "Ingredient 2",
+              "description": "TODO",
+              "type": "string"
+            }
+          }
+        },
+        "pesticideName": {
+          "title": "Pesticide Name",
+          "description": "TODO",
+          "type": "string"
+        }
+      },
+      "usesPerHectare": {
+        "title": "Uses Per Hectare",
+        "description": "TODO",
+        "type": "number",
+        "minimum": 0
+      },
+      "numberOfApplication": {
+        "title": "Number Of Application",
+        "description": "TODO",
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "pestsInfection": {
+      "title": "Pests Infection",
+      "description": "TODO",
+      "type": "array",
+      "additionalProperties": false,
+      "required": [
+        "%AffectedCrops",
+        "pestName"
+      ],
+      "properties": {
+        "%AffectedCrops": {
+          "title": "Percentage Affected Crops",
+          "description": "TODO",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "pestName": {
+          "title": "Pest Name",
+          "description": "TODO",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

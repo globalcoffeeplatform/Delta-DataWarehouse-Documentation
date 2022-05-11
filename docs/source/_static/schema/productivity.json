@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/productivity.json",
+  "title": "Yield / Productivity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coffeeProductiveArea",
+    "amountHarvested",
+    "formOfCoffee"
+  ],
+  "properties": {
+    "coffeeProductiveArea": {
+      "title": "Coffee productive area",
+      "description": "Coffee productive area (requires local land area unit conversion to hectares)",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "amountHarvested": {
+      "title": "Amount harvested",
+      "description": "Amount harvested (requires local unit conversion to kgs)--Amount sold can be a suitable proxy where harvested amounts are unknown (i.e., many smallholders will only know production volumes when their product is weighed at the mill)",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "formOfCoffee": {
+      "title": "Form of coffee",
+      "description": "The form of coffee (will require conversion to GBE, Green Bean Equivalent)",
+      "type": "string",
+      "enum": [
+        "Fresh cherry",
+        "Dry cherry",
+        "Dry parchment",
+        "Wet parchment",
+        "Green bean",
+        "Other"
+      ]
+    }
+  }
+}

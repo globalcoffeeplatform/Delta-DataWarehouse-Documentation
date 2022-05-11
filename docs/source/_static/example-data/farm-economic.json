@@ -1,0 +1,105 @@
+"economic-farm": {
+  "coffeeProfit": 400000.5,
+  "productivity": {
+    "coffeeProductiveArea": 2.12,
+    "amountHarvested": 2500,
+    "formOfCoffee": "Dry cherry"
+  },
+  "productionCosts": {
+    "fertilizers": {
+      "amount": 250000,
+      "percentage": 55
+    },
+    "pesticides": {
+      "amount": 20500,
+      "percentage": 90
+    },
+    "hiredLabour": {
+      "amount": 25044,
+      "percentage": 98
+    },
+    "plantingMaterial": {
+      "amount": 12058,
+      "percentage": 100
+    },
+    "renovation": {
+      "amount": 32430,
+      "percentage": 100
+    },
+    "deductionsByBuyers": {
+      "amount": 0,
+      "percentage": 0
+    },
+    "rentOfLand": {
+      "amount": 23430,
+      "percentage": 50
+    },
+    "energy": {
+      "amount": 256000,
+      "percentage": 90
+    },
+    "irrigation": {
+      "amount": 34000,
+      "percentage": 90
+    },
+    "capitalAssets": {
+      "amount": 34234,
+      "percentage": 90
+    },
+    "cultivationPractices": {
+      "amount": 56546,
+      "percentage": 90
+    },
+    "traceabilityAndRecordKeeping": {
+      "amount": 21123,
+      "percentage": 90
+    },
+    "plantingReforestation": {
+      "amount": 256000,
+      "percentage": 90
+    },
+    "training": {
+      "amount": 56000,
+      "percentage": 90
+    },
+    "interest": {
+      "amount": 23432,
+      "percentage": 90
+    },
+    "cropInsurance": {
+      "amount": 3433,
+      "percentage": 90
+    },
+    "cooperativeFees": {
+      "amount": 4344,
+      "percentage": 90
+    },
+    "unpaidFamilyLabour": {
+      "amount": 34324,
+      "percentage": 90
+    },
+    "transportation": {
+      "amount": 25600,
+      "percentage": 90
+    },
+    "other": {
+      "amount": 1851,
+      "percentage": 50
+    }
+  },
+  "price": {
+    "totalCoffeeRevenue": 25800,
+    "premiumReceived": 2356,
+    "kgSold": 2510
+  },
+  "labourCostDistribution": {
+    "replanting-rejuvenation": 15,
+    "grassControlling": 15,
+    "branchBudsControlling": 15,
+    "irrigationWatering": 15,
+    "pesticideApplication": 15,
+    "fertilizerApplication": 15,
+    "harvesting": 5,
+    "processing": 5
+  }
+}

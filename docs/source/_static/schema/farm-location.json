@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/farm-location.json",
+  "title": "The location of the farm",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coordinates",
+    "positionTakenAt"
+  ],
+  "properties": {
+    "coordinates": {
+      "title": "Front door geolocation, using custom schema",
+      "description": "Latitude and Longitude Information",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "precision": {
+      "title": "Precision",
+      "description": "Accuracy with which coordinates were captured by the device",
+      "type": "number"
+    },
+    "farmShape": {
+      "title": "Farm shape",
+      "description": "List of coordinates which describes the shape of the farm",
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "geoLocation": {
+      "title": "Front door geolocation, using GeoJson schema",
+      "$ref": "./point.json",
+      "additionalProperties": false
+    },
+    "farmShape2": {
+      "title": "Shape of the farm, using GeoJson schema",
+      "$ref": "./polygon.json",
+      "additionalProperties": false
+    },
+    "positionTakenAt": {
+      "title": "The position was taken at ..",
+      "type": "string",
+      "enum": [
+        "Middle of the farm",
+        "At the gate or entry"
+      ]
+    },
+    "altitude": {
+      "title": "Altitude",
+      "description": "Altitude information in meters",
+      "type": "number"
+    }
+  }
+}

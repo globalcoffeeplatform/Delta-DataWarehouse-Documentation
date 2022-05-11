@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/name.json",
+  "title": "The name of the farmer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lastName"
+  ],
+  "properties": {
+    "firstName": {
+      "title": "First name(s) of the farmer surveyed",
+      "description": "First name(s) of the farmer surveyed. In places where farmers use only one name (a family name), that name should be entered as the Last Name and an appropriate prefix or 'Farmer' could be entered as the First Name.",
+      "type": "string"
+    },
+    "lastName": {
+      "title": "Last name of the farmer surveyed",
+      "description": "Last name of the farmer surveyed. Initials should be avoided when possible. In places where farmers use only one name (a family name), that name should be entered as the Last Name and an appropriate prefix or 'Farmer' could be entered as the First Name.",
+      "type": "string"
+    }
+  }
+}

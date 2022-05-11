@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/accidents.json",
+  "title": "Accidents",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "noOfAccidents",
+    "fatalInjury",
+    "resumeWork"
+  ],  
+  "properties": {
+    "noOfAccidents": {
+      "title": "The number of accidents",
+      "description": "Total Number of Accidents.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "fatalInjury": {
+      "title": "Number of fatal injuries",
+      "description": "What were the number of workers who were fatally injured due to the farming activity during the last 12 months.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "resumeWork": {
+      "title": "Number of workers who were unable to resume work",
+      "description": "In the last 12 months, what were the number of workers who were injured due to the farming activity and were unable to resume work for 2 or more days?",
+      "type": "integer",
+      "minimum": 0
+    },
+    "fatalInjuryFamily": {
+      "title": "Number of fatal injuries of family members",
+      "description": "What were the number of family members who were fatally injured due to the farming activity in the last 12 months?",
+      "type": "integer",
+      "minimum": 0
+    },
+    "resumeWorkFamily": {
+      "title": "Number of family members who were unable to resume work",
+      "description": "In the last 12 months, what were the number of family members who were injured due to the farming activity and were unable to resume work for 2 or more days?",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

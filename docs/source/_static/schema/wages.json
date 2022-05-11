@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/wages.json",
+  "title": "Wages",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "wagesCoffee",
+    "wagesHarvesting",
+    "wagesProcessing"
+  ],
+  "properties": {
+    "wagesCoffee": {
+      "title": "The average daily wage rate paid for coffee production",
+      "description": "Daily wage for coffee production which include wage for following activities:\\n * Land Prepration\\n * Sowing\\n * Weeding\\n * Pesticide Application\\n * Fertilizer Application\\n * Machine Operation",
+      "type": "number",
+      "minimum": 0
+    },
+    "wagesHarvesting": {
+      "title": "The average daily wage rate paid for harvesting",
+      "description": "Average daily wage paid to workers for harvesting.",
+      "type": "number",
+      "minimum": 0
+    },
+    "wagesProcessing": {
+      "title": "The average daily wage rate paid for processing",
+      "description": "Average daily wage paid to workers for processing.",
+      "$extended-description": "Format is local currency",
+      "type": "number",
+      "minimum": 0
+    },
+    "wageDistribution": {
+      "title": "Wage distribution",
+      "description": "Can you indicate the coffee production wage for following activities?",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "wageFertilizer": {
+      "title": "Fertilizer wage",
+      "description": "Average daily wage paid to workers for Fertilizer application.",
+      "type": "number"
+    },    
+    "wageLandprep": {
+      "title": "Land preparation wage",
+      "description": "Average daily wage paid to workers for Land preparation.",
+      "type": "number"
+    },    
+    "wageMachine": {
+      "title": "Machinery use wage",
+      "description": "Average daily wage paid to workers for Machinery use (tractor etc).",
+      "type": "number"
+    },     
+    "wagePesticide": {
+      "title": "Pesticide wage",
+      "description": "Average daily wage paid to workers for Pesticide application.",
+      "type": "number"
+    },      
+    "wageSowing": {
+      "title": "Sowing wage",
+      "description": "Average daily wage paid to workers for Sowing.",
+      "type": "number"
+    },
+    "wageWeeding": {
+      "title": "Weeding wage",
+      "description": "Average daily wage paid to workers for Weeding",
+      "type": "number"
+    },   
+    "wageOther": {
+      "title": "Other wage",
+      "description": "Average daily wage paid to workers for Other activities.",
+      "type": "number"
+    },     
+    "ruralMinimumWage": {
+      "title": "Rural minimum wage",
+      "type": "number",
+      "minimum": 0
+    },
+    "nationalMinimumWage": {
+      "title": "National minimum wage",
+      "type": "number",
+      "minimum": 0
+    },
+    "permMaleWorker": {
+      "title": "Number of permanent male worker",
+      "description": "Total number of permanent male workers employed.\\nNote: Permanent means up to 48 working hours/week.",
+      "type": "integer",
+      "minimum": 0
+    },    
+    "permFemaleWorker": {
+      "title": "Number of permanent female worker",
+      "description": "Total number of permanent female workers employed.\\nNote: Permanent means up to 48 working hours/week.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "tempMaleWorker": {
+      "title": "Number of temporary male workers",
+      "description": "Total number of temporary male workers employed.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "tempFemaleWorker": {
+      "title": "Number of temporary female workers",
+      "description": "Total number of temporary female workers employed.",
+      "type": "integer",
+      "minimum": 0
+    }, 
+    "familyWorker": {
+      "title": "Number of working family members",
+      "description": "How many Family members work with you on the farm?",
+      "type": "integer",
+      "minimum": 0
+    }           
+  }
+}

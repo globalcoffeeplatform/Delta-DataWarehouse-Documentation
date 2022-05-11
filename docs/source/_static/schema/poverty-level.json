@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/poverty-level.json",
+  "title": "Poverty level",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalHouseholdIncome",
+    "householdMembers"
+  ],
+  "properties": {
+    "totalHouseholdIncome": {
+      "title": "Total household income",
+      "description": "Total household income in USD",
+      "type": "number",
+      "minimum": 0
+    },
+    "householdMembers": {
+      "title": "Household members",
+      "description": "Number of adults in the household",
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

@@ -1,0 +1,46 @@
+"general-farm": {
+  "farmId": {
+    "identifier": "2345",
+    "organisation": "Land register of Burundi",
+    "timestamp": "1998-12-28"
+  },
+  "farmerId": {
+    "organisation": "Chamber of Commerce, Burundi",
+    "identifier": "1035413151",
+    "timestamp": "2010-05-21"
+  },
+  "address": {
+    "streetAddress": "1600 Amphitheatre Pkwy",
+    "adminAreaLevel4/village": "village1",
+    "adminAreaLevel3/district/city": "city1",
+    "adminAreaLevel2/state/province": "BR-01",
+    "zipCode": "45856",
+    "adminAreaLevel1/countryName": "Burundi"
+  },
+  "farmOwnership": "Rented",
+  "totalFarmSize": 16.25,
+  "totalAreaCoffee": 14.48,
+  "location": {
+    "coordinates": [
+      125.25,
+      125.25
+    ],
+    "farmShape": [
+      [
+        125.45,
+        145.45
+      ],
+      [
+        125.23,
+        125.78
+      ],
+      [
+        125.46,
+        142.25
+      ]
+    ],
+    "positionTakenAt": "Middle of the farm",
+    "altitude": 256.45,
+    "precision": 10.4
+  }
+}

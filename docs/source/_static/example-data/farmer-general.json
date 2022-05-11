@@ -1,0 +1,40 @@
+"general-farmer": {
+  "farmerId": {
+    "organisation": "Chamber of Commerce, Burundi",
+    "identifier": "1035413151",
+    "timestamp": "2010-05-21"
+  },
+  "name": {
+    "firstName": "Carlos",
+    "lastName": "de la Huerta"
+  },
+  "address": {
+    "streetAddress": "1600 Amphitheatre Pkwy",
+    "adminAreaLevel4/village": "village1",
+    "adminAreaLevel3/district/city": "city1",
+    "adminAreaLevel2/state/province": "PR",
+    "zipCode": "858101",
+    "adminAreaLevel1/countryName": "Burundi"
+  },
+  "yearOfBirth": 1974,
+  "gender": "M",
+  "farmIds": [
+    {
+      "identifier": "2345",
+      "organisation": "Land register of Burundi",
+      "timestamp": "1998-12-28"
+    }
+  ],
+  "thirdPartyIds": [
+    {
+      "identifier": "N2786-Q5572-H8123-S9007",
+      "organisation": "UN Blue number",
+      "timestamp": "2018-12-08"
+    },
+    {
+      "identifier": "514356411",
+      "organisation": "COSA",
+      "timestamp": "2017-12-30"
+    }
+  ]
+}

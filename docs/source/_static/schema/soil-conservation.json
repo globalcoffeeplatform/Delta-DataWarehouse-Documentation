@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/globalcoffeeplatform/Delta-DataWarehouse-Documentation/main/schema/soil-conservation.json",
+  "title": "Soil Conservation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "checkDams",
+    "contourPlanting",
+    "liveFences",
+    "recyclingOrganicMatter",
+    "interplanting",
+    "cropResidueManagementPractices",
+    "soilDrain",
+    "soilMoist",
+    "soilType"
+  ],
+  "properties": {
+    "checkDams": {
+      "title": "Check dams",
+      "description": "Check dams, drainage channels or diversion ditches",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "contourPlanting": {
+      "title": "Contour planting",
+      "description": "Contour planting, terracing, or soil ridges around trees",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "liveFences": {
+      "title": "Live fences",
+      "description": "Live fences, hedgerows or buffer zones",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "recyclingOrganicMatter": {
+      "title": "Recycling organic matter",
+      "description": "Recycling organic matter and crop waste",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "interplanting": {
+      "title": "Interplanting",
+      "description": "Interplanting, nitrogen-fixing plants, cover crops, or mulching",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "cropResidueManagementPractices": {
+      "title": "Crop Residue Management Practices",
+      "description": "TODO",
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "soilDrain": {
+      "title": "Soil Drain",
+      "description": "TODO",
+      "type": "string",
+      "enum": [
+        "Good",
+        "Bad"
+      ]
+    },
+    "soilMoist": {
+      "title": "Soil Moist",
+      "description": "TODO",
+      "type": "string",
+      "enum": [
+        "Moist",
+        "Dry"
+      ]
+    },
+    "soilType": {
+      "title": "Soil Type",
+      "description": "TODO",
+      "type": "string",
+      "enum": [
+        "Bazal soil",
+        "Bauxite soil",
+        "Grey soil",
+        "Soil mixed with sand",
+        "Others"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+"social-farm": {
+  "labourPractices": {
+    "prohibitingDiscrimination": "Yes",
+    "clearContracting": "No",
+    "hazardousWorkingCondition": "Yes",
+    "rightToOrganise": "Yes"
+  },
+  "wages": {
+    "wagesProcessing": 40000.0,
+    "wagesHarvesting": 14124.0,
+    "wagesCoffee": 500000.0,
+    "ruralMinimumWage": 20000.0,
+    "nationalMinimumWage": 20000.0,
+    "wageDistribution": "Yes",
+    "wageLandprep": 50.41,
+    "wageSowing": 50.41,
+    "wageWeeding": 50.41,
+    "wagePesticide": 50.41,
+    "wageFertilizer": 50.41,
+    "wageMachine": 50.41,
+    "wageOther": 50.41,
+    "permMaleWorker": 5,
+    "permFemaleWorker": 4,
+    "tempMaleWorker": 8,
+    "tempFemaleWorker": 7,
+    "familyWorker": 4
+  },
+  "accidents": {
+    "noOfAccidents": 1,
+    "fatalInjury": 0,
+    "resumeWork": 0,
+    "fatalInjuryFamily": 1,
+    "resumeWorkFamily": 0
+  }
+}
