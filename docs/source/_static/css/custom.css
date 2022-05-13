@@ -24,6 +24,10 @@
     overflow-y: auto;
 }
 
+section > p {
+    max-width: 76ch;
+}
+
 p {
     margin-bottom: 0.5rem;
 }
