@@ -15,27 +15,28 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "absoluteArea",
-        "landConversion"
+        "landConversion",
+        "absoluteArea"
       ],
       "properties": {
-        "absoluteArea": {
-          "title": "Absolute area in ha",
-          "type": "number",
-          "minimum": 0
-        },
         "landConversion": {
           "title": "Land Conversion",
-          "description": "TODO",
+          "description": "Has any part of your land been converted between arable land, grassland or forest in the last 5 years?",
           "type": "string",
           "enum": [
             "Yes",
             "No"
           ]
         },
+        "absoluteArea": {
+          "title": "Absolute area in ha",
+          "description": "Area of forest converted to farm land",
+          "type": "number",
+          "minimum": 0
+        },
         "landConversionType": {
           "title": "Land Conversion Type",
-          "description": "TODO",
+          "description": "From what type of land conversion from",
           "type": "string",
           "enum": [
             "Forest",
@@ -45,6 +46,7 @@
         },
         "landConversionYear": {
           "title": "Land Conversion Year",
+          "description": "When was this land converted?",
           "type": "integer",
           "minimum": 1900,
           "maximum": 2050
@@ -53,7 +55,7 @@
     },
     "ecosystemProtection": {
       "title": "Forest and ecosystem protection",
-      "description": "% of forest and ecosystem protection practices used on the farm",
+      "description": "% of forest and ecosystem protection practices used on the farm.",
       "type": "number",
       "minimum": 0,
       "maximum": 100

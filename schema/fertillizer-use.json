@@ -7,20 +7,32 @@
     "required": [
         "productName",
         "usesPerHectare",
-        "activeIngredient",
         "useBasedOnProfessionalAssessment"
     ],
     "properties": {
         "productName": {
+            "title":"Product name",
+            "description": "Name of the fertilizer",
             "type": "string"
         },
         "usesPerHectare": {
+            "title": "Used per hectare",
+            "description": "Fertilizer used per hectare",
             "type": "number",
             "minimum": 0
         },
+        "useBasedOnProfessionalAssessment": {
+            "title": "Use based on professional assessment",
+            "description": "Whether fertilizer use was based on professional assessment",
+            "type": "string",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
         "activeIngredient": {
-            "title": "Fertilizer Use Active Ingredient",
-            "description": "TODO",
+            "title": "Active ingredient",
+            "description": "Active ingredient depends on the fertilizer name",
             "type": "object",
             "additionalProperties": false,
             "required": [
@@ -45,15 +57,6 @@
                     "minimum": 0
                 }
             }
-        },
-        "useBasedOnProfessionalAssessment": {
-            "title": "Use Based On Professional Assessment",
-            "description": "TODO",
-            "type": "string",
-            "enum": [
-                "Yes",
-                "No"
-            ]
         }
     }
 }

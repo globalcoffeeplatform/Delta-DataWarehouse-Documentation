@@ -313,16 +313,15 @@
 			},
 			"pesticideUses": [
 				{
-					"pesticideName": "Mancozeb",
+					"pesticideName": "Azocyclotin",
 					"activeIngredient": {
 						"ingredient1": "Active Ingredient 1",
 						"ingredient2": "Active Ingredient 2"
 					},
-					"usesPerHectare": 45.5,
 					"numberOfApplication": 2
 				},
 				{
-					"pesticideName": "Dimethoate",
+					"pesticideName": "Profenofos",
 					"activeIngredient": {
 						"ingredient1": "Active Ingredient 1",
 						"ingredient2": "Active Ingredient 2"

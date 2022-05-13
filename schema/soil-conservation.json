@@ -5,6 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "soilType",
     "checkDams",
     "contourPlanting",
     "liveFences",
@@ -12,10 +13,21 @@
     "interplanting",
     "cropResidueManagementPractices",
     "soilDrain",
-    "soilMoist",
-    "soilType"
+    "soilMoist"
   ],
   "properties": {
+    "soilType": {
+      "title": "Soil type",
+      "description": "Main soil type",
+      "type": "string",
+      "enum": [
+        "Bazal soil",
+        "Bauxite soil",
+        "Grey soil",
+        "Soil mixed with sand",
+        "Other soil type"
+      ]
+    },
     "checkDams": {
       "title": "Check dams",
       "description": "Check dams, drainage channels or diversion ditches",
@@ -63,7 +75,7 @@
     },
     "cropResidueManagementPractices": {
       "title": "Crop Residue Management Practices",
-      "description": "TODO",
+      "description": "Using forage by grazing rather than harvesting, applying mulches or providing the soil to give permanent cover",
       "type": "string",
       "enum": [
         "Yes",
@@ -72,7 +84,8 @@
     },
     "soilDrain": {
       "title": "Soil Drain",
-      "description": "TODO",
+      "description": "Is the soil draining capacity good or bad?",
+      "$extended-description": "*Note*: Soils which are often saturated or show surface water, should be classified 'bad'. This would usually include clay soils with restricted or no drainage. For other cases enter 'Good'.",
       "type": "string",
       "enum": [
         "Good",
@@ -81,23 +94,11 @@
     },
     "soilMoist": {
       "title": "Soil Moist",
-      "description": "TODO",
+      "description": "In average, is the soil more moist or dry?",
       "type": "string",
       "enum": [
         "Moist",
         "Dry"
-      ]
-    },
-    "soilType": {
-      "title": "Soil Type",
-      "description": "TODO",
-      "type": "string",
-      "enum": [
-        "Bazal soil",
-        "Bauxite soil",
-        "Grey soil",
-        "Soil mixed with sand",
-        "Others"
       ]
     }
   }

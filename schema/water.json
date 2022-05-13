@@ -15,50 +15,13 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "dripIrrigation",
-        "waterCatchments",
-        "waterEfficientProcessing"
+        "waterSource",
+        "irrigationSystem"
       ],
       "properties": {
-        "dripIrrigation": {
-          "title": "Drip irrigation",
-          "type": "string",
-          "enum": [
-            "Yes",
-            "No"
-          ]
-        },
-        "waterCatchments": {
-          "title": "Water catchments",
-          "type": "string",
-          "enum": [
-            "Yes",
-            "No"
-          ]
-        },
-        "waterEfficientProcessing": {
-          "title": "Water-efficient processing",
-          "type": "string",
-          "enum": [
-            "Yes",
-            "No"
-          ]
-        },
-        "createBasin": {
-          "title": "Create basin",
-          "type": "string",
-          "enum": [
-            "Yes",
-            "No"
-          ]
-        },
-        "waterUses": {
-          "title": "Water uses",
-          "type": "number",
-          "minimum": 0
-        },
         "waterSource": {
-          "title": "Water Source",
+          "title": "Water source",
+          "description": "Major source of water for farm activities",
           "type": "string",
           "enum": [
             "Pond/Lake",
@@ -68,15 +31,58 @@
           ]
         },
         "irrigationSystem": {
-          "title": "Irrigation System",
+          "title": "Irrigation system",
+          "description": "Commonly used irrigation system",
           "type": "string",
           "enum": [
             "Basin",
             "Drip irrigation",
             "Partial sprinkler",
             "Sprinkler",
-            "Others"
+            "Other"
           ]
+        },
+        "dripIrrigation": {
+          "title": "Drip irrigation",
+          "description": "TODO Description for Drip irrigation",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterCatchments": {
+          "title": "Water catchments",
+          "description": "TODO Description for Water catchments",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterEfficientProcessing": {
+          "title": "Water efficient processing",
+          "description": "TODO Description for Water efficient processing",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "createBasin": {
+          "title": "Create basin",
+          "description": "Do you create basins to preserve water and support fertilizing?",
+          "type": "string",
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "waterUses": {
+          "title": "Water uses",
+          "description": "Total water uses per hectare",
+          "type": "number",
+          "minimum": 0
         }
       }
     },
@@ -86,24 +92,24 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "noPesticideCleaningNearWater",
         "preventUntreatedWater",
+        "noPesticideCleaningNearWater",
         "noLivestockNearWater",
         "noDomesticDischarge"
       ],
       "properties": {
-        "noPesticideCleaningNearWater": {
-          "title": "No pesticide cleaning near water",
-          "description": "Pesticide equipment is cleaned away from natural water bodies",
+        "preventUntreatedWater": {
+          "title": "Prevent untreated water",
+          "description": "Ensuring untreated water from processing does not enter natural water bodies",
           "type": "string",
           "enum": [
             "Yes",
             "No"
           ]
         },
-        "preventUntreatedWater": {
-          "title": "Prevent untreated water",
-          "description": "Ensuring untreated water from processing does not enter natural water bodies",
+        "noPesticideCleaningNearWater": {
+          "title": "No pesticide cleaning near water",
+          "description": "Pesticide equipment is cleaned away from natural water bodies",
           "type": "string",
           "enum": [
             "Yes",

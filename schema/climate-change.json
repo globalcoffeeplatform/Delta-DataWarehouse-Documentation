@@ -10,7 +10,7 @@
     "properties": {
         "rainfall": {
             "title": "Rainfall",
-            "description": "TODO",
+            "description": "Average rainfall during this season",
             "type": "number",
             "minimum": 0
         }

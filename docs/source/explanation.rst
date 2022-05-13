@@ -629,9 +629,7 @@ The economic farm characteristics
 Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.)
 
 
-The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the **total** revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.
-
-This simplified approach does not cover asking the producer about revenue and prices for each transaction or amount sold, nor any premiums or deductions. It also factors in only the main costs in the coffee production system (see Cost of Production indicator below).
+The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the total revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.
 
 
 6.2 Yield / Productivity
@@ -702,7 +700,7 @@ This indicator is a Sub-metric for Net Income (or Profit).
    **Reference**: *average-price.json*
 
 
-Average Price received per kg of coffee (GBE). The simple approach involves asking for the total revenue received from coffee during the last production year as well as the amount sold (and the form). The average price per unit can then be calculated. For multiple sales, calculate the price average of sales
+Average Price received per kg of coffee (GBE). The simple approach involves asking for the total revenue received from coffee during the last production year as well as the amount sold (and the form). The average price per unit can then be calculated. For multiple sales, calculate the price average of sales.
 
 
 The average price can then be compared to the global reference price (e.g., ICO).
@@ -715,8 +713,8 @@ This approach avoids the additional time and resources necessary for detailed ac
     <script src="_static/docson/widget.js" data-schema="../schema/average-price.json"></script>
 
 
-6.5 TODO labourCostDistribution title
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6.5 Labour cost distribution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. topic:: Details:
 
    **Property name**: labourCostDistribution
@@ -724,10 +722,7 @@ This approach avoids the additional time and resources necessary for detailed ac
    **Reference**: *labour-costs-distribution.json*
 
 
-TODO labourCostDistribution description
-
-
-TODO labourCostDistribution extended description
+Total labour cost distribution for following coffee related activities
 
 
 .. raw:: html
@@ -795,10 +790,12 @@ In addition, overlaying gps coordinates of farms (See GPS Coordinate instruction
    **Reference**: *fertillizer-use.json*
 
 
-TODO
+Whether a professional assessment or advice was used to determine fertilizer needs on the farm.
+
+The simple approach depends on asking the producer about fertilizer use best practices instead of all the individual fertilizer types and amounts they use. Asking if the producer based their fertilizer use on professional advice or assessments is easy to ask in a standardized way globally and can be a proxy for proper fertilization on the farm (there is ample evidence that the correlation between fertilizer use and yields is not as good as prescribed fertilization and yields).
 
 
-TODO
+Professional assessments include advice from an extension agent or other sustainability program implementer and NOT input sellers.
 
 
 .. raw:: html
@@ -944,9 +941,6 @@ Asking about best practice adoption is a standardized way to address this indica
 TODO
 
 
-TODO
-
-
 .. raw:: html
 
     <script src="_static/docson/widget.js" data-schema="../schema/climate-change.json"></script>
@@ -961,10 +955,7 @@ TODO
    **Reference**: *energy-uses.json*
 
 
-TODO
-
-
-TODO
+Energy used for coffee production
 
 
 .. raw:: html

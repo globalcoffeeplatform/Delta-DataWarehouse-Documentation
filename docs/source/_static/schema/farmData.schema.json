@@ -297,15 +297,13 @@
             "required": [
                 "coffeeProfit",
                 "productivity",
-                "productionCosts",
-                "price",
-                "labourCostDistribution"
+                "price"
             ],
             "properties": {
                 "coffeeProfit": {
                     "title": "Coffee Profit",
                     "description": "Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.)",
-                    "$extended-description": "The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the **total** revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.\\nThis simplified approach does not cover asking the producer about revenue and prices for each transaction or amount sold, nor any premiums or deductions. It also factors in only the main costs in the coffee production system (see Cost of Production indicator below).",
+                    "$extended-description": "The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the total revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.",
                     "type": "number",
                     "exclusiveMinimum": 0
                 },
@@ -323,14 +321,13 @@
                 },
                 "price": {
                     "title": "Average Price",
-                    "description": "Average Price received per kg of coffee (GBE). The simple approach involves asking for the total revenue received from coffee during the last production year as well as the amount sold (and the form). The average price per unit can then be calculated. For multiple sales, calculate the price average of sales",
+                    "description": "Average Price received per kg of coffee (GBE). The simple approach involves asking for the total revenue received from coffee during the last production year as well as the amount sold (and the form). The average price per unit can then be calculated. For multiple sales, calculate the price average of sales.",
                     "$extended-description": "The average price can then be compared to the global reference price (e.g., ICO).\\nThis approach avoids the additional time and resources necessary for detailed accounting and asking about each sale (and the associated premiums, deductions or bonuses) while still providing good results.",
                     "$ref": "./average-price.json"
                 },
                 "labourCostDistribution": {
-                    "title": "TODO labourCostDistribution title",
-                    "description": "TODO labourCostDistribution description",
-                    "$extended-description": "TODO labourCostDistribution extended description",
+                    "title": "Labour cost distribution",
+                    "description": "Total labour cost distribution for following coffee related activities",
                     "$ref": "./labour-costs-distribution.json"
                 }
             }
@@ -342,14 +339,9 @@
             "additionalProperties": false,
             "$example-data": "./example-data/farm-environmental.json",
             "required": [
-                "forestEcosystemProtection",
-                "fertilizerUse",
                 "water",
                 "pestControl",
-                "soilAnalysisReport",
-                "soilConservation",
-                "climateChange",
-                "energyUses"
+                "soilConservation"
             ],
             "properties": {
                 "forestEcosystemProtection": {
@@ -360,8 +352,8 @@
                 },
                 "fertilizerUse": {
                     "title": "Fertilizer use",
-                    "description": "TODO",
-                    "$extended-description": "TODO",
+                    "description": "Whether a professional assessment or advice was used to determine fertilizer needs on the farm.\\nThe simple approach depends on asking the producer about fertilizer use best practices instead of all the individual fertilizer types and amounts they use. Asking if the producer based their fertilizer use on professional advice or assessments is easy to ask in a standardized way globally and can be a proxy for proper fertilization on the farm (there is ample evidence that the correlation between fertilizer use and yields is not as good as prescribed fertilization and yields).",
+                    "$extended-description": "Professional assessments include advice from an extension agent or other sustainability program implementer and NOT input sellers.",
                     "$ref": "./fertillizer-use.json"
                 },
                 "water": {
@@ -389,13 +381,11 @@
                 "climateChange": {
                     "title": "Climate Change",
                     "description": "TODO",
-                    "$extended-description": "TODO",
                     "$ref": "./climate-change.json"
                 },
                 "energyUses": {
                     "title": "Energy Uses",
-                    "description": "TODO",
-                    "$extended-description": "TODO",
+                    "description": "Energy used for coffee production",
                     "$ref": "./energy-uses.json"
                 }
             }

@@ -11,7 +11,7 @@
   ],
   "properties": {
     "amount": {
-      "title": "The amount of the cost",
+      "title": "The amount of the costs",
       "type": "number",
       "minimum": 0
     },

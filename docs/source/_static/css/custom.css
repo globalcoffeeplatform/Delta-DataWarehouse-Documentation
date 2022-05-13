@@ -80,3 +80,8 @@ button.btn-example-data {
     margin-top: 1px;
     margin-bottom: 5px;
 }
+
+.docson .type-enum:not(:last-child)::after {
+    content: ' | ';
+    color: green;
+}

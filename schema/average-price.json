@@ -16,12 +16,12 @@
       "minimum": 0
     },
     "kgSold": {
-      "title": "kg of GBE sold",
+      "title": "Total GBE coffee sold",
       "type": "number",
       "minimum": 0
     },
     "premiumReceived": {
-      "title": "Premium received",
+      "title": "Amount received as premium",
       "type": "number",
       "minimum": 0
     }
