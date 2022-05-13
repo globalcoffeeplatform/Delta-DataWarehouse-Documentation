@@ -491,3 +491,8 @@
 .docson .box {
     width: 96% !important;
 }
+
+.docson .type-enum:not(:last-child)::after {
+    content: ' |';
+    color: green;
+}
