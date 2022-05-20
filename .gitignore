@@ -6,3 +6,4 @@ generator/bin/
 generator/obj/
 generator/packages/
 docs/node_modules/
+*.7z
