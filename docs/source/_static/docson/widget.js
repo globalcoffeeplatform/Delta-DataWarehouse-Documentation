@@ -29,18 +29,18 @@ if (script.attributes["data-schema"]) {
         docson + "#" +
         script.attributes["data-schema"].value + "'></iframe>");
     function receiveMessage(event) {
-        console.log("<", event)
+        console.debug("<", event)
         if (event.data.id && event.data.id == "docson") {
           var frame = document.getElementById(event.data.url);
           if(event.data.action == "resized") {
             frame.height = event.data.height + 18;
           }
           if(event.data.action == "ready") {
-            console.log(frame.parentNode)
+            console.debug(frame.parentNode)
             frame.contentWindow.postMessage({ id: "docson", font: window.getComputedStyle(frame.parentNode).fontFamily}, "*");
+            frame.height = event.data.height + 18; // Added by Paul Meems, May 20 2022
           }
         }
-
     }
     window.addEventListener("message", receiveMessage, false);
 } else {

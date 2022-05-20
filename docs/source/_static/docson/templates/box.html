@@ -61,8 +61,10 @@
         {{#if properties}}
             {{#each properties}}
             <div class="signature">
-                <div class="signature-header">
-                    <div class="property-name {{#contains ../required @key}}required{{/contains}}">{{@key}}</div>
+                <div class="signature-header">                
+                	<div class="signature-title">{{__name}}</div>
+                	<div class="signature-title">{{@properties}}</div>
+                    <div class="property-name {{#contains ../required @key}}required{{/contains}}"><strong>Property name</strong>{{@key}}</div>
                     <div class="signature-type">
                         {{#main this}}
                             {{signature this null this}}
