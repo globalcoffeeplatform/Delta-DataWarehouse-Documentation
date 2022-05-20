@@ -8,9 +8,9 @@ namespace Generator;
 public sealed class GenerateRst
 {
     private const string WorkingPath = @"D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\";
-    private readonly string _jsonInputFile = Path.Combine(WorkingPath, @"schema\farmData.schema.json");
-    private readonly string _outputFile = Path.Combine(WorkingPath, @"docs\source\explanation.rst");
-    private readonly string _testdataFile = Path.Combine(WorkingPath, @"example-data\testset.json");
+    private readonly string _jsonSchemaFile = Path.Combine(WorkingPath, @"schema\farmData.schema.json");
+    private readonly string _outputRstFile = Path.Combine(WorkingPath, @"docs\source\explanation.rst");
+    private readonly string _testdataJsonFile = Path.Combine(WorkingPath, @"example-data\testset.json");
 
     private TitleNumber _titleNumber;
     private readonly StringBuilder _sb = new();
@@ -24,10 +24,10 @@ public sealed class GenerateRst
 
     public void ParseDeltaDataWarehouseSchema()
     {
-        var jsonObject = JObject.Parse(File.ReadAllText(_jsonInputFile));
-        Debug.Assert(jsonObject is not null, "No JSON parsed");
+        var jsonSchemaObject = JObject.Parse(File.ReadAllText(_jsonSchemaFile));
+        Debug.Assert(jsonSchemaObject is not null, "No JSON schema parsed");
 
-        WriteDynamicProperties(jsonObject);
+        WriteSchemaHeaderProperties(jsonSchemaObject);
 
         // Write content:
         _sb.AppendLine("\n.. contents::\n    :depth: 4");
@@ -36,7 +36,7 @@ public sealed class GenerateRst
         //WriteHeading("Metadata", 2);
 
         //_titleNumber.Level2 = 1;
-        var properties = jsonObject.Property("properties");
+        var properties = jsonSchemaObject.Property("properties");
         if (properties is null) throw new InvalidOperationException("No properties found");
         var rootProperties = JObject.Parse(properties.Value.ToString());
         var propertyList = new List<JProperty>();
@@ -83,13 +83,13 @@ public sealed class GenerateRst
 
     private void SplitJsonTestdata()
     {
-        if (!File.Exists(_testdataFile)) throw new FileNotFoundException(_testdataFile);
+        if (!File.Exists(_testdataJsonFile)) throw new FileNotFoundException(_testdataJsonFile);
 
-        var basePath = Path.GetDirectoryName(_testdataFile);
-        if (basePath == null) throw new ArgumentNullException($"Can't get base path from {_testdataFile}");
+        var basePath = Path.GetDirectoryName(_testdataJsonFile);
+        if (basePath == null) throw new ArgumentNullException($"Can't get base path from {_testdataJsonFile}");
 
         Debug.WriteLine(basePath);
-        dynamic jsonObject = JObject.Parse(File.ReadAllText(_testdataFile));
+        dynamic jsonObject = JObject.Parse(File.ReadAllText(_testdataJsonFile));
         Debug.Assert(jsonObject is not null, "No JSON parsed");
 
         File.WriteAllText(Path.Combine(basePath, "metadata.json"), "\"metadata\": " + jsonObject.metadata.ToString());
@@ -105,10 +105,10 @@ public sealed class GenerateRst
 
     private void SaveFile()
     {
-        using (var file = new StreamWriter(_outputFile, false))
+        using (var file = new StreamWriter(_outputRstFile, false))
         {
             file.WriteLine(_sb.ToString());
-            Debug.WriteLine("File saved");
+            Debug.WriteLine($"File ({_outputRstFile}) saved");
         }
 
         // Rebuild
@@ -425,12 +425,13 @@ public sealed class GenerateRst
         }
     }
 
-    private void WriteDynamicProperties(dynamic jsonObject)
+    private void WriteSchemaHeaderProperties(dynamic jsonObject)
     {
         WriteHeading((string)jsonObject.title, 1);
         string description = jsonObject.description;
         _required = jsonObject.required;
         _sb.AppendLine(description);
+        _sb.AppendLine($"\n{MakeBold("Version")}: {jsonObject.version}\n");
     }
 
     private void WriteHeading1(string text)
