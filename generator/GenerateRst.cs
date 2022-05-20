@@ -300,7 +300,9 @@ public sealed class GenerateRst
     private static string AppendDotIfNeeded(string value)
     {
         // Check for dot:
-        if (!value.Trim().EndsWith('.') && !value.Trim().EndsWith('?'))
+        if (!value.Trim().EndsWith('.') 
+            && !value.Trim().EndsWith('?')
+            && !value.Trim().EndsWith(':'))
         {
             value = $"{value}.";
         }

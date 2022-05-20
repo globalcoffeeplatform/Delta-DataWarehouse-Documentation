@@ -372,7 +372,7 @@
                 },
                 "soilAnalysisReport": {
                     "title": "Soil Analysis Report",
-                    "description": "TODO",
+                    "description": "TODO: Description Soil Analysis Report",
                     "$ref": "./soil-analysis-report.json"
                 },
                 "soilConservation": {
@@ -383,7 +383,7 @@
                 },
                 "climateChange": {
                     "title": "Climate Change",
-                    "description": "TODO",
+                    "description": "TODO: Description Climate Change",
                     "$ref": "./climate-change.json"
                 },
                 "energyUses": {

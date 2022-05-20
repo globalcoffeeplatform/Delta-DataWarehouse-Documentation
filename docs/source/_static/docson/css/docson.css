@@ -501,7 +501,7 @@
     font-style: italic;
     margin-top: 1rem;
 }
-.docson .signature-title:not(:first-child) {
+.box-body > .signature > .signature-header > div.signature-title:not(:first-child) {
 	border-top: 1px groove green;
 }
 .docson .signature-title > p {
@@ -514,3 +514,4 @@
 	font-size: 100%;
 	padding-left: 10px;
 }
+

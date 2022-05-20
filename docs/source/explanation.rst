@@ -824,7 +824,7 @@ Professional assessments include advice from an extension agent or other sustain
    **Reference**: *water.json*
 
 
-Water conservation practices include (relevance of individual practices will need to be determined by region):.
+Water conservation practices include (relevance of individual practices will need to be determined by region):
 
 
 1. Drip irrigation
@@ -899,7 +899,7 @@ Focusing on IPM techniques is a globally standardized way to understand pest man
    **Reference**: *soil-analysis-report.json*
 
 
-TODO.
+TODO: Description Soil Analysis Report.
 
 
 .. raw:: html
@@ -950,7 +950,7 @@ Asking about best practice adoption is a standardized way to address this indica
    **Reference**: *climate-change.json*
 
 
-TODO.
+TODO: Description Climate Change.
 
 
 .. raw:: html
