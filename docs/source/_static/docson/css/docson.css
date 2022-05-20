@@ -496,3 +496,14 @@
     content: ' |';
     color: green;
 }
+
+.docson .signature-title {
+    font-style: italic;
+}
+
+.docson .required + .signature-type::after {
+	content: " required";
+	color: #ff0000;
+	font-size: 100%;
+	padding-left:10px;
+}
