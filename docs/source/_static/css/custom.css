@@ -80,3 +80,9 @@ button.btn-example-data {
     margin-top: 1px;
     margin-bottom: 5px;
 }
+
+h2 {
+    border-top: 3px solid #4e917a;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+}

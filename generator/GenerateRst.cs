@@ -32,19 +32,17 @@ public sealed class GenerateRst
         // Write content:
         _sb.AppendLine("\n.. contents::\n    :depth: 4");
 
-        // _titleNumber.Level1 = 1;
-        //WriteHeading("Metadata", 2);
-
-        //_titleNumber.Level2 = 1;
         var properties = jsonSchemaObject.Property("properties");
         if (properties is null) throw new InvalidOperationException("No properties found");
+        
+        var propertyList = new List<JProperty>(); // To hold the properties for later usage
         var rootProperties = JObject.Parse(properties.Value.ToString());
-        var propertyList = new List<JProperty>();
         foreach (var property in rootProperties.Properties())
         {
             var objectProperties = JObject.Parse(property.Value.ToString());
             var type = objectProperties.GetValue("type");
             if (type is null) throw new InvalidOperationException("No type found");
+            
             if (type.ToString() == "object")
             {
                 propertyList.Add(property);
@@ -227,6 +225,10 @@ public sealed class GenerateRst
         {
             title = objectPropertiesTitle.ToString();
         }
+        else
+        {
+            Console.WriteLine($"{propertyName} has not title!");
+        }
         WriteHeading(title, headingLevel);
 
         // TODO: Is not yet working properly:
@@ -282,13 +284,30 @@ public sealed class GenerateRst
     {
         var description = objectProperties.GetValue("description");
         if (description is not null)
-            AppendMultiLines(description.ToString());
+        {
+            AppendMultiLines(AppendDotIfNeeded(description.ToString()));
+        }
+        else
+        {
+            Console.WriteLine($"{objectProperties} has no description");
+        }
 
         var extendedDescription = objectProperties.GetValue("$extended-description");
         if (extendedDescription is not null)
-            AppendMultiLines(extendedDescription.ToString());
+            AppendMultiLines(AppendDotIfNeeded(extendedDescription.ToString()));
     }
 
+    private static string AppendDotIfNeeded(string value)
+    {
+        // Check for dot:
+        if (!value.Trim().EndsWith('.') && !value.Trim().EndsWith('?'))
+        {
+            value = $"{value}.";
+        }
+
+        return value;
+    }
+    
     private void WriteReference(JObject objectProperties)
     {
         var objectPropertiesRef = objectProperties.GetValue("$ref");

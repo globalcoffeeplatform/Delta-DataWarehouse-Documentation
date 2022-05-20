@@ -20,6 +20,9 @@ TODO: Farm data description
    **Type**: *object*
 
 
+TODO: metadata description.
+
+
 .. raw:: html
 
     <button class="btn btn-example-data" onclick="$('#example-data-metadata').toggle(300)">Metadata Example Data</button>
@@ -77,8 +80,8 @@ The version number of the schema. When not provided the latest version of the sc
 The production year is defined as the end of the last harvest to the end of the corresponding harvest before that (12 month period).
 
 
-1.3.1 The start of the projection year in YYYY-MM
--------------------------------------------------
+1.3.1 Start production year
+---------------------------
 .. topic:: Details:
 
    **Property name**: start
@@ -90,8 +93,11 @@ The production year is defined as the end of the last harvest to the end of the 
    **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
 
 
-1.3.2 The end of the projection year in YYYY-MM
------------------------------------------------
+The start of the production year in YYYY-MM.
+
+
+1.3.2 End production year
+-------------------------
 .. topic:: Details:
 
    **Property name**: end
@@ -101,6 +107,9 @@ The production year is defined as the end of the last harvest to the end of the 
    **Examples**: '2016-10', '2019-08'
 
    **Pattern**: *^\d{4}-(0[1-9]|1[0-2])$*
+
+
+The end of the production year in YYYY-MM.
 
 
 ********************************
@@ -113,7 +122,7 @@ The production year is defined as the end of the last harvest to the end of the 
    **Type**: *object*
 
 
-The general farmer characteristics
+The general farmer characteristics.
 
 
 .. raw:: html
@@ -261,7 +270,7 @@ When this dataset is reused by another organisation who needs to use their own G
    **Type**: *object*
 
 
-The social farmer characteristics
+The social farmer characteristics.
 
 
 .. raw:: html
@@ -353,7 +362,7 @@ More comprehensive nutritional indicators can be expensive and require significa
    **Type**: *object*
 
 
-The general farm characteristics
+The general farm characteristics.
 
 
 .. raw:: html
@@ -394,7 +403,7 @@ Globally Unique ID of the recording of the farm at a specific time and by a spec
    **Reference**: *global-unique-id.json*
 
 
-Globally Unique ID of the farmer of this farm
+Globally Unique ID of the farmer of this farm.
 
 
 .. raw:: html
@@ -430,7 +439,7 @@ This should be the location of the farm itself (main plot), not the home of the 
    **Allowed values**: 'Owned', 'Rented', 'Others'
 
 
-Captures the information on ownership status of the farm 
+Captures the information on ownership status of the farm .
 
 
 4.5 Total farm size (ha)
@@ -461,7 +470,7 @@ Best practice is to collect response in any given unit, and then perform convers
    **Exclusive minimum**: *0*
 
 
-Sum of coffee farm areas from producers in the sustainability program or supply chain (ha)
+Sum of coffee farm areas from producers in the sustainability program or supply chain (ha).
 
 
 Area under coffee production can also be triangulated with other pieces of data collected (e.g., trees planted per unit land (density rate) and/or total number of trees planted).
@@ -510,7 +519,7 @@ When this dataset is reused by another organisation that needs to use their own 
    **Type**: *object*
 
 
-The social farm characteristics
+The social farm characteristics.
 
 
 .. raw:: html
@@ -582,10 +591,10 @@ Organisations may wish to participate in working groups to define and measure li
    **Reference**: *accidents.json*
 
 
-TODO description
+TODO description.
 
 
-TODO extended-description
+TODO extended-description.
 
 
 .. raw:: html
@@ -603,7 +612,7 @@ TODO extended-description
    **Type**: *object*
 
 
-The economic farm characteristics
+The economic farm characteristics.
 
 
 .. raw:: html
@@ -629,7 +638,7 @@ The economic farm characteristics
    **Exclusive minimum**: *0*
 
 
-Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.)
+Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.).
 
 
 The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the total revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.
@@ -644,10 +653,10 @@ The simple approach (which avoids the additional time and resources necessary fo
    **Reference**: *productivity.json*
 
 
-kgs of GBE (harvested)/ha of coffee productive area
+kgs of GBE (harvested)/ha of coffee productive area.
 
 
-For general GBE conversion guidance, please see: http://www.thecoffeeguide.org/coffee-guide/world-coffee-trade/conversions-and-statistics/
+For general GBE conversion guidance, please see: http://www.thecoffeeguide.org/coffee-guide/world-coffee-trade/conversions-and-statistics/.
 
 
 .. raw:: html
@@ -664,7 +673,7 @@ For general GBE conversion guidance, please see: http://www.thecoffeeguide.org/c
    **Reference**: *production-costs.json*
 
 
-Costs incurred to produce the coffee during the last production year (calculated per kg of GBE)
+Costs incurred to produce the coffee during the last production year (calculated per kg of GBE).
 
 
 The simple approach asks only about the main costs in the production system that typically account for the vast majority of total costs (and the total amount spent on each during the last production year). By focusing on the main costs in a system, this provides a good sense of the economic picture on the farm without adding substantial detail to the approach.
@@ -725,7 +734,7 @@ This approach avoids the additional time and resources necessary for detailed ac
    **Reference**: *labour-costs-distribution.json*
 
 
-Total labour cost distribution for following coffee related activities
+Total labour cost distribution for following coffee related activities.
 
 
 .. raw:: html
@@ -743,7 +752,7 @@ Total labour cost distribution for following coffee related activities
    **Type**: *object*
 
 
-The environmental farm characteristics
+The environmental farm characteristics.
 
 
 .. raw:: html
@@ -815,7 +824,7 @@ Professional assessments include advice from an extension agent or other sustain
    **Reference**: *water.json*
 
 
-Water conservation practices include (relevance of individual practices will need to be determined by region):
+Water conservation practices include (relevance of individual practices will need to be determined by region):.
 
 
 1. Drip irrigation
@@ -890,7 +899,7 @@ Focusing on IPM techniques is a globally standardized way to understand pest man
    **Reference**: *soil-analysis-report.json*
 
 
-TODO
+TODO.
 
 
 .. raw:: html
@@ -907,7 +916,7 @@ TODO
    **Reference**: *soil-conservation.json*
 
 
-% of applicable soil conservation practices used on the farm (of those listed)
+% of applicable soil conservation practices used on the farm (of those listed).
 
 
 **Soil conservation measures include**:
@@ -941,7 +950,7 @@ Asking about best practice adoption is a standardized way to address this indica
    **Reference**: *climate-change.json*
 
 
-TODO
+TODO.
 
 
 .. raw:: html
@@ -958,7 +967,7 @@ TODO
    **Reference**: *energy-uses.json*
 
 
-Energy used for coffee production
+Energy used for coffee production.
 
 
 .. raw:: html
