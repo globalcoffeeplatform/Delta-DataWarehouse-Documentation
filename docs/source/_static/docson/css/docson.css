@@ -499,11 +499,18 @@
 
 .docson .signature-title {
     font-style: italic;
+    margin-top: 1rem;
+}
+.docson .signature-title:not(:first-child) {
+	border-top: 1px groove green;
+}
+.docson .signature-title > p {
+	margin: 0;
 }
 
 .docson .required + .signature-type::after {
-	content: " required";
+	content: "*";
 	color: #ff0000;
 	font-size: 100%;
-	padding-left:10px;
+	padding-left: 10px;
 }
