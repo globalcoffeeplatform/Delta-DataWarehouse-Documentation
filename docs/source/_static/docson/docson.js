@@ -78,6 +78,19 @@ define(["lib/jquery", "lib/handlebars", "lib/highlight", "lib/jsonpointer", "lib
         return JSON.stringify(schema, null, 2);
     });
 
+    Handlebars.registerHelper('title', function(schema) {
+        var value = schema.title;
+
+        if( !value ) return "";
+        var text = value;
+        if(marked) {
+            marked.setOptions({gfm: true, breaks: true})
+            return new Handlebars.SafeString(marked(text));
+        } else {
+            return text;
+        }
+    });
+    
     Handlebars.registerHelper('desc', function(schema) {
         var description = schema.description;
 
