@@ -7,7 +7,13 @@ namespace Generator;
 
 public sealed class GenerateRst
 {
+    // Change this to meet your needs:
+    // ##################################################################################################
     private const string WorkingPath = @"D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\";
+    private const bool RunSphinx = true;
+    // ##################################################################################################
+    
+    
     private readonly string _jsonSchemaFile = Path.Combine(WorkingPath, @"schema\farmData.schema.json");
     private readonly string _outputRstFile = Path.Combine(WorkingPath, @"docs\source\explanation.rst");
     private readonly string _testdataJsonFile = Path.Combine(WorkingPath, @"example-data\testset.json");
@@ -109,16 +115,19 @@ public sealed class GenerateRst
             Debug.WriteLine($"File ({_outputRstFile}) saved");
         }
 
-        // Rebuild
-        var p = new Process();
-        var psi = new ProcessStartInfo
+        if (RunSphinx)
         {
-            FileName = "CMD.EXE",
-            Arguments = @$"/K {WorkingPath}\docs\make.bat html"
-        };
-        p.StartInfo = psi;
-        p.Start();
-        p.WaitForExit();
+            // Rebuild
+            var p = new Process();
+            var psi = new ProcessStartInfo
+            {
+                FileName = "CMD.EXE",
+                Arguments = @$"/K {WorkingPath}\docs\make.bat html"
+            };
+            p.StartInfo = psi;
+            p.Start();
+            p.WaitForExit();
+        }
     }
 
     private void WriteNextLevel(IEnumerable<JProperty> propertyList, int headerLevel, JArray? parentRequired)
