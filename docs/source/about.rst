@@ -14,7 +14,7 @@ The approach builds on extensive global experience with sustainability metrics a
 Data Privacy
 ------------
 In the framework for this project, no data will be shared. However, it lays the ground for the potential to exchange data and making it easier to do so if needed, be it between business partners, or for sending information to a sustainability standard, etc.
-The project’s underlying philosophy is that every party has sovereignty over their own data and is not obligated to share it.
+The project's underlying philosophy is that every party has sovereignty over their own data and is not obligated to share it.
 
 
 Impact vs. Monitoring Data
@@ -32,7 +32,7 @@ Producer Sampling Guidelines
 
 3. Try to talk to the head of the household for each farm (different people may give you different perspectives but typically the decision-makers will yield the most accurate results).
 
-4. Quality checks in the first week of a surveyor’s work can also make a big difference; make sure surveyors stick to the specific questions as written.
+4. Quality checks in the first week of a surveyor's work can also make a big difference; make sure surveyors stick to the specific questions as written.
 
 Certification & Audit Data
 --------------------------

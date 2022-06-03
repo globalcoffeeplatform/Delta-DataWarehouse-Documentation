@@ -6,7 +6,11 @@
 Welcome to Delta DataWarehouse's documentation!
 =======================================================
 
-This project displays the initial basic common indicators for farm-level coffee sustainability. The common indicators are a result of a collective multi-stakeholder approach on defining key metrics for sustainability performance, based on the Sustainability Progress Framework elaborated under the joint facilitation of the Sustainable Coffee Challenge (SCC) and the Global Coffee Platform (GCP).  COSA – with feedback from the members of a carefully selected global expert committee – have developed and synthesized practical metrics to operationalize the indicators so they can be functional across origins and comparable over time. The approach builds on extensive global experience with sustainability metrics and the expertise of the committee members.
+This project displays the initial basic common indicators for farm-level coffee sustainability. The common indicators are a result of a collective multi-stakeholder approach on 
+defining key metrics for sustainability performance, based on the Sustainability Progress Framework elaborated under the joint facilitation of the Sustainable Coffee Challenge (SCC) 
+and the Global Coffee Platform (GCP).  COSA - with feedback from the members of a carefully selected global expert committee - have developed and synthesized practical metrics to operationalize 
+the indicators so they can be functional across origins and comparable over time. The approach builds on extensive global experience with sustainability metrics and the expertise of the 
+committee members.
 
 Partners of this project
 ########################

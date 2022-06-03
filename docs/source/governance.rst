@@ -27,14 +27,16 @@ It is expected that the further development, adoption and elaboration of the dat
 Stewardship and Governance
 ==========================
 Global Coffee Platform (GCP) acts as the lead steward of the Global Coffee Data Standard.
-The organisation is led by an Executive Director. The organisation’s activities are overseen by a Board of Directors.
+The organisation is led by an Executive Director. The organisation's activities are overseen by a Board of Directors.
 
-In the pursuit of openness and community-driven process, subscribers to the Global Coffee Data Standard and those engaging with the Global Coffee Data Standard GitHub repository will be kept informed at all stages about planned revisions to the Global Coffee Data Standard, and will be offered clear and timely opportunities to input and comment.
+In the pursuit of openness and community-driven process, subscribers to the Global Coffee Data Standard and those engaging with the Global Coffee Data Standard GitHub repository will 
+be kept informed at all stages about planned revisions to the Global Coffee Data Standard, and will be offered clear and timely opportunities to input and comment.
 
 To ensure the relevance, quality and effective implementation of proposed updates to the Standard, new version releases will be subjected to a process of peer review with
 invited reviewers from publisher and user communities, and an open review process.
 
-A Standard Stewardship Committee, responsible for giving final approval to formal upgrades of the Standard and ensuring the processes in this document have been properly carried out will be set up in due course.
+A Standard Stewardship Committee, responsible for giving final approval to formal upgrades of the Standard and ensuring the processes in this document have been properly carried 
+out will be set up in due course.
 
 Intellectual property
 ---------------------
@@ -122,7 +124,7 @@ Prioritisation
 ==============
 The technical team, with reference to community views, identify change proposals and extensions which should be considered for adoption in the next version of the Standard, assigning these to milestones in the issue tracker on GitHub where they are open for discussion.
 
-Periodically, at the start of a revision process a cut-off date for proposals will be announced with at least two weeks’ notice. After that date, a prioritised list of updates is produced. Any new proposed changes received after this period may not be considered until the next prioritisation phase.
+Periodically, at the start of a revision process a cut-off date for proposals will be announced with at least two weeks' notice. After that date, a prioritised list of updates is produced. Any new proposed changes received after this period may not be considered until the next prioritisation phase.
 
 Prioritisation review
 ---------------------
@@ -148,13 +150,19 @@ Following Stewardship Committee approval, the revision branch can be set to live
 ==================
 Deprecation Policy
 ==================
-If a term (an indicator or property) is scheduled to be renamed or removed from the specification as a result of the revision process, the next release of the specification must deprecate the term within the schema, and the following major release must rename or remove the term from the schema, making the term obsolete. Implementations may use deprecated terms, but will receive warnings from the GCP Data Quality tool described below. Implementations may not use obsolete terms, and will receive errors from the Data Quality tool.
+If a term (an indicator or property) is scheduled to be renamed or removed from the specification as a result of the revision process, the next release of the 
+specification must deprecate the term within the schema, and the following major release must rename or remove the term from the schema, making the term obsolete. 
+Implementations may use deprecated terms, but will receive warnings from the GCP Data Quality tool described below. Implementations may not use obsolete terms, and will 
+receive errors from the Data Quality tool.
 
 ==============
 Support Policy
 ==============
-Support will be offered for one prior version of the Standard. Support for any earlier versions than this will be ended when a new version is released. For example, when 1.1 is the latest release, 1.0 will be supported in the Data Quality tool and other relevant tools and platforms managed by GCP. When 1.2 is released, support for 1.0 will no longer be guaranteed.
+Support will be offered for one prior version of the Standard. Support for any earlier versions than this will be ended when a new version is released. For example, 
+when 1.1 is the latest release, 1.0 will be supported in the Data Quality tool and other relevant tools and platforms managed by GCP. When 1.2 is released, support for 1.0 
+will no longer be guaranteed.
 
-Publishers are encouraged to review each new version when released, and to consider how they might adopt new features. Publishers should aim to move to a new major version within 18 months of its release.
+Publishers are encouraged to review each new version when released, and to consider how they might adopt new features. Publishers should aim to move to a new major version 
+within 18 months of its release.
 
 .. Should we add a privacy page like http://standard.threesixtygiving.org/en/latest/privacy-notice/
