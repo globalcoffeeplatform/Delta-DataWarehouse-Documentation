@@ -68,3 +68,19 @@ The push triggers ReadTheDocs to do a pull and generate the updated HTML and dep
 When you have enough rights (you need to be a ``maintainer`` of the project) you can see the build results at https://readthedocs.org/projects/delta-datawarehouse/builds/
 and check the updated website at https://delta-datawarehouse.readthedocs.io/en/latest/index.html.
 
+==========================
+Static pages
+==========================
+
+There are several static pages which can be directly updated:
+
+* about.rst
+* governance.rst
+* how-to-update.rst (this page)
+* index.rst
+* use-cases.rst
+
+After updating these files you can push them to Github and ReadTheDocs will run a new build.
+
+The syntax of a .rst file is a bit different than other markup languages. A good cheat sheet is available at https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+
