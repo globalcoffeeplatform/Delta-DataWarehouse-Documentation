@@ -44,6 +44,7 @@ The ISEAL Innovations Fund is supported by the following partners:
    governance
    explanation
    technical-details
+   how-to-update
 
 
 
