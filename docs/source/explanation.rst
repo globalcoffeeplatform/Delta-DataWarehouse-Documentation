@@ -20,7 +20,7 @@ TODO: Farm data description
    **Type**: *object*
 
 
-TODO: metadata description.
+The details of the data owner and time period during which data is collected.
 
 
 .. raw:: html

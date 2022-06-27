@@ -9,7 +9,7 @@ public sealed class GenerateRst
 {
     // Change this to meet your needs:
     // ##################################################################################################
-    private const string WorkingPath = @"D:\dev\GlobalCoffeePlatform\DeltaDataWarehouse\git\";
+    private const string WorkingPath = @"D:\GCP\Delta-DataWarehouse-Documentation\";
     private const bool RunSphinx = true;
     // ##################################################################################################
     

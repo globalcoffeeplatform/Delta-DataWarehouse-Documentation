@@ -22,7 +22,7 @@
     "properties": {
         "metadata": {
             "title": "Metadata",
-            "description": "TODO: metadata description",
+            "description": "The details of the data owner and time period during which data is collected",
             "$example-data": "./example-data/metadata.json",
             "type": "object",
             "additionalProperties": false,
