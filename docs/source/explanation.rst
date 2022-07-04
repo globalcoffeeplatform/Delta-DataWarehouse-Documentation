@@ -63,9 +63,7 @@ The unique identifier for this dataset. The organisation is responsible for the 
    **Allowed values**: '1.0.0'
 
 
-**Optional**
-
-The version number of the schema. When not provided the latest version of the schema will be used to validate the dataset.
+The version number of the schema based on which the data is stored.
 
 
 1.3 Production year

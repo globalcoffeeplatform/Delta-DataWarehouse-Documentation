@@ -38,7 +38,7 @@
                 },
                 "schemaVersion": {
                     "title": "Schema version",
-                    "description": "**Optional**\\nThe version number of the schema. When not provided the latest version of the schema will be used to validate the dataset.",
+                    "description": "The version number of the schema based on which the data is stored.",
                     "type": "string",
                     "$comment": "Add new version number to enum when released.",
                     "enum": [
