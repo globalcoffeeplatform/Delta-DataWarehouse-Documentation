@@ -40,7 +40,6 @@
     "adminAreaLevel1/countryName": {
       "title": "Admin Area Level 1 (country name)",
       "description": "Country Name in ISO 3166-1 Alpha-2 Format. List of ISO code of countries can be found here https://www.iso.org/obp/ui/#search.",
-      //"$ref": "#/definitions/country-names"
       "type": "string"
     }
   },
