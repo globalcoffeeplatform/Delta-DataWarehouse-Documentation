@@ -13,9 +13,9 @@
     "streetAddress": "1600 Amphitheatre Pkwy",
     "adminAreaLevel4/village": "village1",
     "adminAreaLevel3/district/city": "city1",
-    "adminAreaLevel2/state/province": "BI-RY",
+    "adminAreaLevel2/state/province": "BR-01",
     "zipCode": "45856",
-    "adminAreaLevel1/countryName": "BI"
+    "adminAreaLevel1/countryName": "Burundi"
   },
   "farmOwnership": "Rented",
   "totalFarmSize": 16.25,
