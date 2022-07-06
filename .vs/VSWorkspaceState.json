@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\generator"
+    "\\generator",
+    "\\schema"
   ],
   "SelectedNode": "\\generator\\Generator.sln",
   "PreviewInSolutionExplorer": false

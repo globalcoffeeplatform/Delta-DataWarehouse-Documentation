@@ -34,12 +34,12 @@
     },
     "adminAreaLevel2/state/province": {
       "title": "Admin Area Level 2 (state or province)",
-      "description": "State Name in ISO 3166-1 Alpha-2 Format. ISO codes of province for a country can be found here https://www.iso.org/obp/ui/#search.",
+      "description": "State Name in ISO 3166-1 Alpha-2 Format. ISO codes of province for a country can be found `here <https://www.iso.org/obp/ui/#search>`.",
       "type": "string"
     },
     "adminAreaLevel1/countryName": {
       "title": "Admin Area Level 1 (country name)",
-      "description": "Country Name in ISO 3166-1 Alpha-2 Format. List of ISO code of countries can be found here https://www.iso.org/obp/ui/#search.",
+      "description": "Country Name in ISO 3166-1 Alpha-2 Format. List of ISO code of countries can be found `here <https://www.iso.org/obp/ui/#search>`.",
       "type": "string"
     }
   },
