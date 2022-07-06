@@ -12,9 +12,9 @@
     "streetAddress": "1600 Amphitheatre Pkwy",
     "adminAreaLevel4/village": "village1",
     "adminAreaLevel3/district/city": "city1",
-    "adminAreaLevel2/state/province": "PR",
+    "adminAreaLevel2/state/province": "BI-RY",
     "zipCode": "858101",
-    "adminAreaLevel1/countryName": "Burundi"
+    "adminAreaLevel1/countryName": "BI"
   },
   "yearOfBirth": 1974,
   "gender": "M",
