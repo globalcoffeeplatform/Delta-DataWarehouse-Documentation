@@ -246,18 +246,18 @@
                     "title": "Location of the farm",
                     "description": "GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.",
                     "$ref": "./farm-location.json"
-                },
-                "thirdPartyIds": {
-                    "title": "Third-party identifier",
-                    "description": "When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.",
-                    "type": "array",
-                    "uniqueItems": true,
-                    "items": {
-                        "$ref": "./global-unique-id.json"
-                    },
-                    "additionalItems": false,
-                    "additionalProperties": false
                 }
+                //"thirdPartyIds": {
+                //    "title": "Third-party identifier",
+                //    "description": "When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.",
+                //    "type": "array",
+                //    "uniqueItems": true,
+                //    "items": {
+                //        "$ref": "./global-unique-id.json"
+                //    },
+                //    "additionalItems": false,
+                //    "additionalProperties": false
+                //}
             }
         },
         "social-farm": {

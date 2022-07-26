@@ -11,7 +11,7 @@
   "properties": {
     "totalHouseholdIncome": {
       "title": "Total household income",
-      "description": "Total household income in USD",
+      "description": "Total household income in Local Currency",
       "type": "number",
       "minimum": 0
     },
