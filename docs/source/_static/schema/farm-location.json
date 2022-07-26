@@ -10,7 +10,7 @@
   ],
   "properties": {
     "coordinates": {
-      "title": "Front door geolocation, using custom schema",
+      "title": "Coordinate of the fram either captured at the gate/entry or middle of the farm.",
       "description": "Latitude and Longitude Information",
       "type": "array",
       "items": {
@@ -38,16 +38,16 @@
         "maxItems": 2
       }
     },
-    "geoLocation": {
-      "title": "Front door geolocation, using GeoJson schema",
-      "$ref": "./point.json",
-      "additionalProperties": false
-    },
-    "farmShape2": {
-      "title": "Shape of the farm, using GeoJson schema",
-      "$ref": "./polygon.json",
-      "additionalProperties": false
-    },
+    //"geoLocation": {
+    //  "title": "Front door geolocation, using GeoJson schema",
+    //  "$ref": "./point.json",
+    //  "additionalProperties": false
+    //},
+    //"farmShape2": {
+    //  "title": "Shape of the farm, using GeoJson schema",
+    //  "$ref": "./polygon.json",
+    //  "additionalProperties": false
+    //},
     "positionTakenAt": {
       "title": "The position was taken at ..",
       "type": "string",

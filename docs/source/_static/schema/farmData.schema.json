@@ -246,18 +246,18 @@
                     "title": "Location of the farm",
                     "description": "GPS should be captured for each farm plot if possible. GPS readings should be taken outside of buildings and away from significant tree coverage to avoid interference in the signal. GPS should be captured in the middle of the plot, and/or near the entrance to any main building (if there is one). Where the main residence or other buildings are not located on the farm plot, GPS should be taken in the middle of the plot.",
                     "$ref": "./farm-location.json"
-                },
-                "thirdPartyIds": {
-                    "title": "Third-party identifier",
-                    "description": "When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.",
-                    "type": "array",
-                    "uniqueItems": true,
-                    "items": {
-                        "$ref": "./global-unique-id.json"
-                    },
-                    "additionalItems": false,
-                    "additionalProperties": false
                 }
+                //"thirdPartyIds": {
+                //    "title": "Third-party identifier",
+                //    "description": "When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.",
+                //    "type": "array",
+                //    "uniqueItems": true,
+                //    "items": {
+                //        "$ref": "./global-unique-id.json"
+                //    },
+                //    "additionalItems": false,
+                //    "additionalProperties": false
+                //}
             }
         },
         "social-farm": {
@@ -283,12 +283,12 @@
                     "$extended-description": "The approach involves asking for the average daily wage rate paid. If applicable, include wages for coffee production, harvesting, and processing and take an average across all three categories.\\nWage is listed and also expressed as a percentage of the rural minimum wage (where that exists), alternately to the national minimum wage.\\nThis approach gives a good sense of worker earnings coming from the most prominent types of labour without needing to detail individual jobs, rates, benefits, etc.\\nOrganisations may wish to participate in working groups to define and measure living wage. There is still no widely used methodology, but the ability to understand whether a worker could survive on the wage earned would be useful for any industry. ",
                     "$ref": "./wages.json"
                 },
-                "accidents": {
-                    "title": "Accidents",
-                    "description": "TODO description",
-                    "$extended-description": "TODO extended-description",
-                    "$ref": "./accidents.json"
-                }
+              "accidents": {
+                "title": "Accidents",
+                "description": "This indicator tracks the number of fatalities and non-fatalities occurring on farm.",
+                "$extended-description": "Worker health and safety refers to the principle that workers should be protected from sickness, disease and injury arising from their employment.",
+                "$ref": "./accidents.json"
+              }
             }
         },
         "economic-farm": {

@@ -491,22 +491,6 @@ GPS should be captured for each farm plot if possible. GPS readings should be ta
     <script src="_static/docson/widget.js" data-schema="../schema/farm-location.json"></script>
 
 
-4.8 Third-party identifier
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. topic:: Details:
-
-   **Property name**: thirdPartyIds
-
-   **Type**: *array*
-
-   **Unique items**: *True*
-
-   **Array items**: *global-unique-id.json*
-
-
-When this dataset is reused by another organisation that needs to use their own Global Unique Identifier, the original identifier can be saved here, to track history and origin.
-
-
 *****************************
 5 Social farm characteristics
 *****************************
@@ -589,10 +573,10 @@ Organisations may wish to participate in working groups to define and measure li
    **Reference**: *accidents.json*
 
 
-TODO description.
+This indicator tracks the number of fatalities and non-fatalities occurring on farm.
 
 
-TODO extended-description.
+Worker health and safety refers to the principle that workers should be protected from sickness, disease and injury arising from their employment.
 
 
 .. raw:: html
