@@ -13,27 +13,27 @@
     "properties": {
         "coalUses": {
             "title": "Coal uses",
-            "description": "Quantity of used coal",
+            "description": "Quantity of used coal in KGs",
             "type": "number",
             "minimum": 0
         },
-        "electicityUses": {
-            "title": "Electicity uses",
-            "description": "TODO",
-            "type": "number",
-            "minimum": 0
-        },
-        "gasUses": {
-            "title": "Gas uses",
-            "description": "TODO",
-            "type": "number",
-            "minimum": 0
-        },
-        "oil-petrol-dieselUses": {
-            "title": "Oil, petrol and/or diesel uses",
-            "description": "TODO",
-            "type": "number",
-            "minimum": 0
-        }
+      "electicityUses": {
+        "title": "Electicity uses",
+        "description": "Electricity uses in kWh",
+        "type": "number",
+        "minimum": 0
+      },
+      "gasUses": {
+        "title": "Gas uses",
+        "description": "Gas uses in cubic meter",
+        "type": "number",
+        "minimum": 0
+      },
+      "oil-petrol-dieselUses": {
+        "title": "Oil, petrol and/or diesel uses",
+        "description": "Uses in lit",
+        "type": "number",
+        "minimum": 0
+      }
     }
 }

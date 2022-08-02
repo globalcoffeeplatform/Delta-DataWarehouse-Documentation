@@ -305,7 +305,7 @@
             "properties": {
                 "coffeeProfit": {
                     "title": "Coffee Profit",
-                    "description": "Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.)",
+                    "description": "Total revenue from coffee sales minus total costs for coffee production (Reported in Local Currency/ha of coffee productive area.)",
                     "$extended-description": "The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the total revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.",
                     "type": "number",
                     "exclusiveMinimum": 0

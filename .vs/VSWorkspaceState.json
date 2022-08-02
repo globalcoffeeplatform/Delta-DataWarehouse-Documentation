@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\generator"
+    "\\generator",
+    "\\schema"
   ],
-  "SelectedNode": "\\generator\\Generator.sln",
+  "SelectedNode": "\\schema\\costs-definition.json",
   "PreviewInSolutionExplorer": false
 }

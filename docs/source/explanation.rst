@@ -620,7 +620,7 @@ The economic farm characteristics.
    **Exclusive minimum**: *0*
 
 
-Total revenue from coffee sales minus total costs for coffee production (Reported in USD/ha of coffee productive area.).
+Total revenue from coffee sales minus total costs for coffee production (Reported in Local Currency/ha of coffee productive area.).
 
 
 The simple approach (which avoids the additional time and resources necessary for detailed accounting while still providing good results) is to ask for the total revenue from sales of coffee as a whole, and subtract main costs. This indicator is reported on a per hectare basis to allow comparability across projects and regions.
